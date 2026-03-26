@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* 导航栏 */
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.5);
+}
+
+.nav-inner {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+nav a {
+  color: #ccc;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero.small {
+  height: 50vh;
+}
+
+.hero h1 {
+  font-size: 56px;
+  z-index: 1;
+}
+
+.hero p {
+  color: #aaa;
+  z-index: 1;
+}
+
+/* 背景光效 */
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(0,122,255,0.4), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(255,0,150,0.3), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(0,255,200,0.2), transparent 40%);
+  filter: blur(80px);
+}
+
+/* 项目 */
+.projects {
+  padding: 80px 20px;
+}
+
+.project {
+  background: #111;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project.big {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 玻璃效果 */
+.glass {
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+/* 网格 */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.project a {
+  color: #2997ff;
+}
+
+/* about */
+.about {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* 内容 */
+.content {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  color: #666;
+  padding: 40px;
+}
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  
+  /* 渐变文字 */
+  background: linear-gradient(90deg, #fff, #aaa, #fff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* 动画 */
+  animation: shine 4s linear infinite, fadeInUp 1s ease;
+}
+
+/* 光流动 */
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* 淡入上移 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
