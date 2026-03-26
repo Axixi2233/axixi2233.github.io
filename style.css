@@ -12,7 +12,10 @@ body {
   top: 0;
   backdrop-filter: blur(12px);
   background: rgba(0,0,0,0.5);
+
+  z-index: 999; /* 👈 确保在最上面 */
 }
+
 
 .nav-inner {
   max-width: 1000px;
@@ -66,7 +69,11 @@ nav a:hover {
     radial-gradient(circle at 70% 60%, rgba(255,0,150,0.3), transparent 40%),
     radial-gradient(circle at 50% 80%, rgba(0,255,200,0.2), transparent 40%);
   filter: blur(80px);
+
+  pointer-events: none; /* 👈 核心修复 */
+  z-index: 0;            /* 👈 防止层级问题 */
 }
+
 
 /* 项目 */
 .projects {
