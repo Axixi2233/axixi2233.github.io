@@ -4,29 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>关于</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="nav-inner">
-    <div class="logo">
-        <nav>
-            <a href="./index.html">个人空间·阿西西</a>
-        </nav>
+    <a class="brand" href="./index.html">
+      <img
+        class="brand-avatar"
+        src="https://i0.hdslb.com/bfs/face/b41566f47ea0d0f1e35ed54521c849c68c026892.jpg"
+        alt="阿西西头像"
+      >
+      <span class="brand-text">个人空间·阿西西</span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="主导航">
+        <a href="./index.html">首页</a>
+        <a href="./credits.html">鸣谢</a>
+        <a href="./about.html">关于</a>
+      </nav>
     </div>
-    <nav>
-      <a href="./index.html">首页</a>
-      <a href="./about.html">关于</a>
-    </nav>
   </div>
 </header>
 
-<section class="about">
-  <h1>关于我</h1>
-  <p>我是一名开发者，专注于创造优雅的软件体验。</p>
-  <p>📧 genng2019@gmail.com</p>
-</section>
+<main>
+  <section class="about">
+    <p class="eyebrow">About</p>
+    <h1>关于我</h1>
+    <p class="about-lead">
+      我是一名独立开发者，也是一名持续分享数码与产品体验的内容创作者。
+    </p>
+    <a class="about-email" href="mailto:genng2019@gmail.com">genng2019@gmail.com</a>
+  </section>
+
+  <section class="about-links-section">
+    <div class="section-heading compact">
+      <p class="eyebrow">Social Links</p>
+      <h2>也可以在这些平台找到我</h2>
+    </div>
+
+      <div class="about-links-grid">
+        <a class="about-link-card glass-card" href="https://space.bilibili.com/16893379" target="_blank" rel="noreferrer">
+          <img class="about-link-icon" src="./res/icon/icon_bili.png" alt="Bilibili 图标">
+          <div>
+            <h3>Bilibili - 阿西西的日常</h3>
+            <p>space.bilibili.com/16893379</p>
+          </div>
+        </a>
+
+      <a class="about-link-card glass-card" href="https://www.xiaohongshu.com/user/profile/5d21be61000000001600b878" target="_blank" rel="noreferrer">
+        <img class="about-link-icon" src="./res/icon/icon_xhs.png" alt="小红书图标">
+        <div>
+          <h3>小红书 - 阿西西的日常</h3>
+          <p>www.xiaohongshu.com</p>
+        </div>
+      </a>
+
+      <a class="about-link-card glass-card" href="https://v.douyin.com/zm9GLKUfBW8/" target="_blank" rel="noreferrer">
+        <img class="about-link-icon" src="./res/icon/icon_douyin.png" alt="抖音图标">
+        <div>
+          <h3>抖音 - 阿西西的日常</h3>
+          <p>v.douyin.com/zm9GLKUfBW8</p>
+        </div>
+      </a>
+
+      <a class="about-link-card glass-card" href="https://www.youtube.com/@AxixiTV" target="_blank" rel="noreferrer">
+        <img class="about-link-icon" src="./res/icon/icon_youtube.png" alt="Youtube 图标">
+        <div>
+          <h3>Youtube - 阿西西的日常</h3>
+          <p>youtube.com/@AxixiTV</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>
 
 </body>
 </html>
