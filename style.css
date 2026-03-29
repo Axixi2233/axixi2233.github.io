@@ -152,14 +152,11 @@ main {
 
 .hero-shell {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
-  gap: 28px;
+  display: block;
   align-items: stretch;
 }
 
 .hero-copy,
-.hero-panel,
 .project-card,
 .value-card,
 .about,
@@ -218,7 +215,6 @@ main {
 .section-copy,
 .project-card p,
 .value-card p,
-.panel-copy,
 .about p,
 .content p {
   color: var(--muted);
@@ -297,50 +293,6 @@ main {
   border-radius: var(--radius-lg);
   backdrop-filter: blur(14px);
   box-shadow: var(--shadow);
-}
-
-.hero-panel {
-  padding: clamp(28px, 4vw, 36px);
-  align-self: end;
-}
-
-.panel-label {
-  margin: 0;
-  color: #9ed1ff;
-  font: 700 0.78rem/1 "Space Grotesk", sans-serif;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.hero-panel h2 {
-  margin: 20px 0 12px;
-  font: 700 clamp(1.8rem, 4vw, 2.8rem)/1.02 "Space Grotesk", "Noto Sans SC", sans-serif;
-}
-
-.panel-copy {
-  margin: 0 0 26px;
-}
-
-.signal-list {
-  display: grid;
-  gap: 14px;
-}
-
-.signal-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  color: var(--text);
-}
-
-.signal-dot {
-  width: 10px;
-  height: 10px;
-  margin-top: 0.45rem;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #74c0fc, #8ff0d2);
-  box-shadow: 0 0 0 6px rgba(116, 192, 252, 0.12);
-  flex: 0 0 auto;
 }
 
 .projects-section,
@@ -799,16 +751,6 @@ footer p {
   }
 }
 
-@media (max-width: 1080px) {
-  .hero-shell {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-panel {
-    align-self: stretch;
-  }
-}
-
 @media (max-width: 760px) {
   .nav {
     padding: 12px 14px 0;
@@ -848,8 +790,7 @@ footer p {
     width: min(var(--content-width), calc(100% - 28px));
   }
 
-  .hero-copy,
-  .hero-panel {
+  .hero-copy {
     padding: 24px;
   }
 
