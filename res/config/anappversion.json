@@ -1,0 +1,17 @@
+{
+  "appID": "cn.axi.moonlight.an",
+  "data": {
+    "latest": {
+      "code": 2,
+      "versionName":"12.1-260401-axi",
+      "desc": "-本次更新\n1、新增FSR1.0超分Beta;\n2、新增鸣谢页面；"
+    },
+    "history": [
+      {
+        "code": 1,
+        "versionName":"12.1-260331-axi",
+        "desc": "第一版"
+      }
+    ]
+  }
+}
