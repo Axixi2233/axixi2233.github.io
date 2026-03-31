@@ -2,7 +2,7 @@
   "appID": "cn.axi.moonlight.an",
   "data": {
     "latest": {
-      "code": 2,
+      "code": 1,
       "versionName": "12.1-260401",
       "desc": "-本次更新\n1、新增FSR1.0超分Beta;\n2、新增鸣谢页面；\n3、新增检测更新；",
       "github": "https://github.com/Axixi2233/moonlight-android/releases",
@@ -12,8 +12,8 @@
     "history": [
       {
         "code": 1,
-        "versionName": "12.1-260331",
-        "desc": "第一版"
+        "versionName": "12.1-260401",
+        "desc": "-本次更新\n1、新增FSR1.0超分Beta;\n2、新增鸣谢页面；\n3、新增检测更新；"
       }
     ]
   }
