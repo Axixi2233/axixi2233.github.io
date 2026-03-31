@@ -3,16 +3,16 @@
   "data": {
     "latest": {
       "code": 2,
-      "versionName":"12.1-260401-axi",
+      "versionName": "12.1-260401-axi",
       "desc": "-本次更新\n1、新增FSR1.0超分Beta;\n2、新增鸣谢页面；",
       "github": "https://github.com/Axixi2233/moonlight-android/releases",
       "quark": "https://pan.quark.cn/s/9a334d831290",
-      "baidu": "https://pan.baidu.com/s/1yWEiP4ew0RbBMj0jjCWg8g?提取码: axix"
+      "baidu": "https://pan.baidu.com/s/1yWEiP4ew0RbBMj0jjCWg8g?pwd=axix"
     },
     "history": [
       {
         "code": 1,
-        "versionName":"12.1-260331-axi",
+        "versionName": "12.1-260331-axi",
         "desc": "第一版"
       }
     ]
