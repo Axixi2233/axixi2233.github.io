@@ -2,9 +2,9 @@
   "appID": "cn.axi.moonlight.an",
   "data": {
     "latest": {
-      "code": 2,
+      "code": 3,
       "versionName": "12.1-260402",
-      "desc": "-本次更新\n修复TV端打开设置页闪退问题；",
+      "desc": "-本次更新\n1、修复TV端打开设置页闪退问题；\n2、修复apk编辑器改包名虚拟按键无法使用bug；\n3、修复设置页切换触控模式闪退bug；",
       "github": "https://github.com/Axixi2233/moonlight-android/releases",
       "quark": "https://pan.quark.cn/s/9a334d831290",
       "baidu": "https://pan.baidu.com/s/1yWEiP4ew0RbBMj0jjCWg8g?pwd=axix"
@@ -14,6 +14,11 @@
         "code": 1,
         "versionName": "12.1-260401",
         "desc": "-本次更新\n1、新增FSR1.0超分Beta;\n2、新增鸣谢页面；\n3、新增检测更新；"
+      },
+      {
+        "code": 2,
+        "versionName": "12.1-260402",
+        "desc": "-本次更新\n修复TV端打开设置页闪退问题；"
       }
     ]
   }
