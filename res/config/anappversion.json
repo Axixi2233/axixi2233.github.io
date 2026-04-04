@@ -2,9 +2,9 @@
   "appID": "cn.axi.moonlight.an",
   "data": {
     "latest": {
-      "code": 3,
-      "versionName": "12.1-260402",
-      "desc": "-本次更新\n1、修复TV端打开设置页闪退问题；\n2、修复apk编辑器改包名虚拟按键无法使用bug；\n3、修复设置页切换触控模式闪退bug；",
+      "code": 5,
+      "versionName": "12.1-260404",
+      "desc": "-本次更新\n1、新增音频震动功能，并可在 游戏菜单-杂项-音频震动 中进行相关设置与调节。；\n2、新增外设触控板适配；\n3、新增NS Pro 2 USB手柄适配；",
       "github": "https://github.com/Axixi2233/moonlight-android/releases",
       "quark": "https://pan.quark.cn/s/9a334d831290",
       "baidu": "https://pan.baidu.com/s/1yWEiP4ew0RbBMj0jjCWg8g?pwd=axix"
@@ -19,6 +19,11 @@
         "code": 2,
         "versionName": "12.1-260402",
         "desc": "-本次更新\n修复TV端打开设置页闪退问题；"
+      },
+      {
+        "code": 3,
+        "versionName": "12.1-260402",
+        "desc": "-本次更新\n1、修复TV端打开设置页闪退问题；\n2、修复apk编辑器改包名虚拟按键无法使用bug；\n3、修复设置页切换触控模式闪退bug；"
       }
     ]
   }
