@@ -45,8 +45,14 @@
       <div class="hero-bg"></div>
       <div class="hero-shell">
         <div class="hero-copy">
-          <p class="eyebrow">Independent Builder / Open Source Creator</p>
-          <h1 class="hero-title">Think. Build. Refine.</h1>
+          <p class="eyebrow">科技数码博主 / 软件开发者</p>
+          <h1 class="hero-title">
+            <span class="hero-title-static">做产品，也聊科技！</span>
+            <span class="hero-title-series">
+              <span class="hero-title-rotator is-visible" data-hero-rotator>月光</span>
+              <span class="hero-title-suffix"> · 阿西西</span>
+            </span>
+          </h1>
           <p class="hero-subtitle">
             把想法推进成可以真正使用、持续打磨、跨平台落地的产品体验。
           </p>
@@ -208,5 +214,34 @@
   <footer class="site-footer">
     <p>© 2026 阿西西 Inc.</p>
   </footer>
+
+  <script>
+    (() => {
+      const heroRotator = document.querySelector("[data-hero-rotator]");
+      const phrases = ["月光", "星光", "遥光", "手柄"];
+
+      if (!heroRotator || phrases.length <= 1) {
+        return;
+      }
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        heroRotator.textContent = phrases[0];
+        heroRotator.classList.add("is-visible");
+        return;
+      }
+
+      let currentIndex = 0;
+
+      window.setInterval(() => {
+        currentIndex = (currentIndex + 1) % phrases.length;
+        heroRotator.classList.remove("is-visible");
+
+        window.setTimeout(() => {
+          heroRotator.textContent = phrases[currentIndex];
+          heroRotator.classList.add("is-visible");
+        }, 180);
+      }, 2400);
+    })();
+  </script>
 </body>
 </html>

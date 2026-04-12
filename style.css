@@ -202,13 +202,51 @@ main {
 }
 
 .hero-title {
-  max-width: 10ch;
-  font-size: clamp(3rem, 8vw, 7rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2em;
+  max-width: none;
+  font-size: clamp(1.8rem, 4.3vw, 3.9rem);
   background: linear-gradient(135deg, #ffffff 0%, #b7d8ff 35%, #dbfff5 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   animation: floatIn 0.9s ease both;
+}
+
+.hero-title-static,
+.hero-title-rotator {
+  display: inline-block;
+}
+
+.hero-title-series {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.12em;
+}
+
+.hero-title-rotator {
+  min-height: 1.05em;
+  background: linear-gradient(135deg, #8ff0d2 0%, #f5f7fb 52%, #8fc7ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transform: translateY(0.18em);
+  filter: blur(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease, filter 0.35s ease;
+}
+
+.hero-title-rotator.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.hero-title-suffix {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .hero-subtitle,
@@ -221,9 +259,10 @@ main {
 }
 
 .hero-subtitle {
-  max-width: 36rem;
+  max-width: 52rem;
   margin: 24px 0 0;
   font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  white-space: nowrap;
 }
 
 .hero-actions {
@@ -310,7 +349,7 @@ main {
 }
 
 .section-heading h2 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.65rem, 3.6vw, 2.7rem);
 }
 
 .section-copy {
@@ -803,7 +842,8 @@ footer p {
   }
 
   .hero-title {
-    max-width: none;
+    gap: 0.18em;
+    font-size: clamp(1.6rem, 7vw, 2.5rem);
   }
 
   .hero-stats,
@@ -864,6 +904,10 @@ footer p {
   .hero-subtitle,
   .section-copy {
     font-size: 0.98rem;
+  }
+
+  .hero-subtitle {
+    white-space: normal;
   }
 
   .button {
