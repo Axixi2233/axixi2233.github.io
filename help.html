@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08111f">
+  <meta
+    name="description"
+    content="查看遥光·阿西西、月光·阿西西、星光·阿西西的使用说明与帮助文档。"
+  >
+  <title>帮助 · 阿西西</title>
+  <link rel="icon" type="image/svg+xml" href="res/icon/favicon.svg?v=20260412-2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./style.css?v=20260414-1">
+</head>
+<body class="help-page">
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./index.html">
+        <img
+          class="brand-avatar"
+          src="https://i0.hdslb.com/bfs/face/b41566f47ea0d0f1e35ed54521c849c68c026892.jpg"
+          alt="阿西西头像"
+          referrerpolicy="no-referrer"
+          onerror="this.onerror=null;this.src='./res/icon/favicon.svg';"
+        >
+        <span class="brand-text">个人空间·阿西西</span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="主导航">
+          <a href="./index.html">首页</a>
+          <a href="./credits.html">鸣谢</a>
+          <a href="./help.html">帮助</a>
+          <a href="./about.html">关于</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="help-main">
+    <section class="help-hero-shell">
+      <article class="help-header-card">
+        <p class="eyebrow">Help Center</p>
+        <h1>帮助</h1>
+        <p class="help-copy">
+          这里整理了当前产品的使用说明。现阶段已开放遥光·阿西西说明文档，其他产品说明会陆续补充。
+        </p>
+      </article>
+
+      <aside class="help-summary-card">
+        <strong>当前进度</strong>
+        <p>遥光·阿西西说明文档已上线。</p>
+        <p>月光·阿西西、星光·阿西西暂未开放入口。</p>
+      </aside>
+    </section>
+
+    <section class="help-grid-section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Guides</p>
+        <h2>产品说明卡片</h2>
+        <p class="section-copy">
+          点击已上线卡片进入详情页，页面会直接读取仓库中的 Markdown 文档并展示。
+        </p>
+      </div>
+
+      <div class="help-grid">
+        <a class="help-card help-card-active glass-card" href="./help-detail.html?app=distantlight">
+          <div class="help-card-head">
+            <span class="help-card-badge">已上线</span>
+            <span class="help-card-platform">HarmonyOS</span>
+          </div>
+          <h3>遥光·阿西西</h3>
+          <p>查看 HarmonyOS 版本的完整使用说明、远程串流配置、PSN 登录与输入设置指南。</p>
+          <span class="help-card-link">查看说明</span>
+        </a>
+
+        <article class="help-card help-card-disabled glass-card" aria-disabled="true">
+          <div class="help-card-head">
+            <span class="help-card-badge help-card-badge-muted">即将上线</span>
+            <span class="help-card-platform">Android / HarmonyOS</span>
+          </div>
+          <h3>月光·阿西西</h3>
+          <p>月光系列帮助文档正在整理中，后续会补充串流连接、画质设置与问题排查说明。</p>
+          <span class="help-card-link">暂未开放</span>
+        </article>
+
+        <article class="help-card help-card-disabled glass-card" aria-disabled="true">
+          <div class="help-card-head">
+            <span class="help-card-badge help-card-badge-muted">即将上线</span>
+            <span class="help-card-platform">iOS</span>
+          </div>
+          <h3>星光·阿西西</h3>
+          <p>星光系列帮助文档后续会补充，届时会整理安装、登录与串流使用说明。</p>
+          <span class="help-card-link">暂未开放</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>帮助文档会随产品迭代持续更新</p>
+  </footer>
+</body>
+</html>
