@@ -437,6 +437,13 @@ main {
   color: #a9dcff;
 }
 
+.project-link-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  align-items: center;
+}
+
 .project-card a:hover,
 .site-footer a:hover,
 .project-card a:focus-visible,
