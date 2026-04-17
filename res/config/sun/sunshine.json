@@ -1,0 +1,512 @@
+{
+  "version": "0.1.0",
+  "project": {
+    "id": "sunshine",
+    "name": "Sunshine",
+    "description": "Self-hosted game stream host for Moonlight."
+  },
+  "updated": "2026-04-17T02:00:43.966Z",
+  "apps": [
+    {
+      "id": "moonlight-an",
+      "name": "月光·阿西西",
+      "tagline": "Moonlight 安卓版",
+      "description": "月光·阿西西，提供比官方更加丰富易用的功能选项！",
+      "category": "sunshine:client",
+      "platforms": [
+        "android",
+        "tv"
+      ],
+      "icon": "https://appimg-drcn.dbankcdn.com/application/icon144/phone/d86f8b8f2e0a40e4be4d6bbd9acb5267.webp",
+      "links": {
+        "website": "https://axixi2233.github.io/",
+        "github": "https://github.com/Axixi2233/moonlight-android/releases",
+        "download": "https://axixi2233.github.io/",
+        "documentation": "https://axixi2233.github.io/help.html"
+      },
+      "axi-app": true,
+      "official": false,
+      "tags": [
+        "streaming",
+        "gamestream",
+        "client",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 0,
+        "openIssues": 0,
+        "forks": 0,
+        "lastUpdated": "2026-03-28T19:43:00Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-ios-star",
+      "name": "星光·阿西西",
+      "tagline": "Moonlight iOS版",
+      "description": "星光·阿西西，提供比官方更加丰富易用的功能选项！",
+      "category": "sunshine:client",
+      "platforms": [
+        "ios",
+        "tv"
+      ],
+      "icon": "https://appimg-drcn.dbankcdn.com/application/icon144/phone/d86f8b8f2e0a40e4be4d6bbd9acb5267.webp",
+      "links": {
+        "website": "https://axixi2233.github.io/",
+        "github": "https://github.com/Axixi2233/moonlight-ios/releases",
+        "download": "https://apps.apple.com/us/app/starlight-pc-streaming/id6761065654",
+        "documentation": "https://axixi2233.github.io/help.html"
+      },
+      "axi-app": true,
+      "official": false,
+      "tags": [
+        "streaming",
+        "gamestream",
+        "client",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 0,
+        "openIssues": 0,
+        "forks": 0,
+        "lastUpdated": "2026-03-28T19:43:00Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-ohs",
+      "name": "月光·阿西西",
+      "tagline": "Moonlight 鸿蒙版",
+      "description": "一款原生鸿蒙Moonlight串流软件！",
+      "category": "sunshine:client",
+      "platforms": [
+        "harmonyOS",
+        "tv"
+      ],
+      "icon": "https://appimg-drcn.dbankcdn.com/application/icon144/phone/d86f8b8f2e0a40e4be4d6bbd9acb5267.webp",
+      "links": {
+        "website": "https://axixi2233.github.io/",
+        "github": "https://axixi2233.github.io/",
+        "download": "https://appgallery.huawei.com/app/detail?id=cn.axi.moonlight.hw",
+        "documentation": "https://axixi2233.github.io/help.html"
+      },
+      "axi-app": true,
+      "official": false,
+      "tags": [
+        "streaming",
+        "gamestream",
+        "client",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 0,
+        "openIssues": 0,
+        "forks": 0,
+        "lastUpdated": "2026-03-28T19:43:00Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-embedded",
+      "name": "Moonlight Embedded",
+      "tagline": "Gamestream client for embedded systems",
+      "description": "Open source client for Sunshine and NVIDIA GameStream for embedded Linux systems, like Raspberry Pi, CuBox-i and ODROID.",
+      "category": "sunshine:client",
+      "platforms": [
+        "linux"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "links": {
+        "website": "https://moonlight-stream.org/",
+        "github": "https://github.com/moonlight-stream/moonlight-embedded",
+        "download": "https://github.com/moonlight-stream/moonlight-embedded/wiki/Packages",
+        "documentation": "https://github.com/moonlight-stream/moonlight-docs/wiki"
+      },
+      "official": true,
+      "tags": [
+        "streaming",
+        "gamestream",
+        "client",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 1627,
+        "openIssues": 115,
+        "forks": 358,
+        "lastUpdated": "2026-03-28T19:43:00Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-android",
+      "name": "Moonlight for Android",
+      "tagline": "GameStream client for Android",
+      "description": "Open source client for Sunshine and NVIDIA GameStream.",
+      "category": "sunshine:client",
+      "platforms": [
+        "android",
+        "tv"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1-pc.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2-settings.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/fastlane/metadata/android/en-US/images/sevenInchScreenshots/1-pc.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/fastlane/metadata/android/en-US/images/sevenInchScreenshots/2-settings.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/fastlane/metadata/android/en-US/images/tenInchScreenshots/1-pc.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/fastlane/metadata/android/en-US/images/tenInchScreenshots/2-settings.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/fastlane/metadata/android/en-US/images/tvScreenshots/1-pc.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-android/master/fastlane/metadata/android/en-US/images/tvScreenshots/2-settings.png"
+      ],
+      "links": {
+        "website": "https://moonlight-stream.org/",
+        "github": "https://github.com/moonlight-stream/moonlight-android",
+        "download": "https://play.google.com/store/apps/details?id=com.limelight",
+        "documentation": "https://github.com/moonlight-stream/moonlight-docs/wiki"
+      },
+      "official": true,
+      "tags": [
+        "streaming",
+        "android",
+        "mobile",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 6500,
+        "openIssues": 381,
+        "forks": 1158,
+        "lastUpdated": "2024-07-27T22:09:42Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-switch",
+      "name": "Moonlight for Nintendo Switch",
+      "tagline": "Moonlight port for Nintendo Switch",
+      "description": "A port of Moonlight Game Streaming Project for Nintendo Switch.",
+      "category": "sunshine:client",
+      "platforms": [
+        "handheld"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "screenshots": [
+        "https://user-images.githubusercontent.com/9553519/135712658-20382345-2da5-4968-9f57-f9f4470ae819.jpg",
+        "https://user-images.githubusercontent.com/9553519/135712664-bf2481b2-2791-490d-99a9-2f968682db76.jpg",
+        "https://user-images.githubusercontent.com/9553519/135712669-fd8b2495-e1ea-4357-949f-7fa7312da46f.jpg",
+        "https://user-images.githubusercontent.com/9553519/135712672-b9ac3785-bd1c-4948-82b2-9b353019feba.jpg",
+        "https://user-images.githubusercontent.com/9553519/135712676-aaa85bb7-9517-4a6d-bc35-070df092383c.jpg"
+      ],
+      "links": {
+        "github": "https://github.com/XITRIX/Moonlight-Switch",
+        "download": "https://github.com/XITRIX/Moonlight-Switch/releases/latest",
+        "documentation": "https://github.com/XITRIX/Moonlight-Switch?tab=readme-ov-file"
+      },
+      "official": false,
+      "tags": [
+        "streaming",
+        "nintendo-switch",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 1474,
+        "openIssues": 69,
+        "forks": 88,
+        "lastUpdated": "2026-04-10T19:32:22Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-wiiu",
+      "name": "Moonlight for Nintendo Wii U",
+      "tagline": "Moonlight Wii U port",
+      "description": "A port of Moonlight Embedded, which is an open source client for Sunshine and NVIDIA GameStream.",
+      "category": "sunshine:client",
+      "platforms": [
+        "handheld"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "links": {
+        "github": "https://github.com/GaryOderNichts/moonlight-wiiu",
+        "download": "https://github.com/GaryOderNichts/moonlight-wiiu/releases/latest",
+        "documentation": "https://github.com/GaryOderNichts/moonlight-wiiu?tab=readme-ov-file"
+      },
+      "official": false,
+      "tags": [
+        "streaming",
+        "nintendo-wiiu",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 191,
+        "openIssues": 44,
+        "forks": 25,
+        "lastUpdated": "2026-02-14T23:22:38Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-vita",
+      "name": "Moonlight for PS Vita",
+      "tagline": "NVIDIA Gamestream client for PlayStation Vita, based on moonlight-embedded",
+      "description": "A PlayStation Vita port of Moonlight.",
+      "category": "sunshine:client",
+      "platforms": [
+        "handheld"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "screenshots": [
+        "https://github.com/xyzz/vita-moonlight/raw/vita/docs/keyboard.jpg",
+        "https://github.com/xyzz/vita-moonlight/raw/vita/docs/ip1.png",
+        "https://github.com/xyzz/vita-moonlight/raw/vita/docs/ip2.png",
+        "https://github.com/xyzz/vita-moonlight/raw/vita/docs/ip3.png",
+        "https://github.com/xyzz/vita-moonlight/raw/vita/docs/ip4.png",
+        "https://github.com/xyzz/vita-moonlight/raw/vita/docs/ip5.png"
+      ],
+      "links": {
+        "github": "https://github.com/xyzz/vita-moonlight",
+        "download": "https://github.com/xyzz/vita-moonlight/releases/latest",
+        "documentation": "https://github.com/xyzz/vita-moonlight?tab=readme-ov-file"
+      },
+      "official": false,
+      "tags": [
+        "streaming",
+        "ps-vita",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 772,
+        "openIssues": 74,
+        "forks": 83,
+        "lastUpdated": "2025-11-16T03:12:44Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-n3ds",
+      "name": "Moonlight for the *New* Nintendo 3DS",
+      "tagline": "Gamestream client for the New 3DS",
+      "description": "Open source client for Sunshine and NVIDIA GameStream for the *New* Nintendo 3DS, forked from Moonlight Embedded.",
+      "category": "sunshine:client",
+      "platforms": [
+        "handheld"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "links": {
+        "github": "https://github.com/zoeyjodon/moonlight-N3DS",
+        "download": "https://github.com/zoeyjodon/moonlight-N3DS/releases/latest",
+        "documentation": "https://github.com/zoeyjodon/moonlight-N3DS?tab=readme-ov-file"
+      },
+      "official": false,
+      "tags": [
+        "streaming",
+        "n3ds",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 266,
+        "openIssues": 40,
+        "forks": 13,
+        "lastUpdated": "2026-03-18T15:31:38Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-xbox",
+      "name": "Moonlight for Xbox",
+      "tagline": "Moonlight port for Xbox One/Series Family of Console",
+      "description": "A port of Moonlight Stream for playing games using GeForce Experience or Sunshine for the Xbox One and Xbox Series X|S family of consoles.",
+      "category": "sunshine:client",
+      "platforms": [
+        "console"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "links": {
+        "github": "https://github.com/TheElixZammuto/moonlight-xbox",
+        "download": "https://apps.microsoft.com/store/detail/9MW1BS08ZBTH?launch=true&mode=full",
+        "documentation": "https://github.com/TheElixZammuto/moonlight-xbox?tab=readme-ov-file"
+      },
+      "official": false,
+      "tags": [
+        "streaming",
+        "xbox",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 546,
+        "openIssues": 40,
+        "forks": 43,
+        "lastUpdated": "2026-03-20T13:09:11Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-ios",
+      "name": "Moonlight iOS/tvOS",
+      "tagline": "GameStream client for iOS/tvOS",
+      "description": "Open source client for Sunshine and NVIDIA GameStream.",
+      "category": "sunshine:client",
+      "platforms": [
+        "ios",
+        "tv"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20Apple%20TV%204K%20-%202019-09-22%20at%2021.14.05.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20Apple%20TV%204K%20-%202019-09-22%20at%2021.14.56.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(2nd%20generation)%20-%202018-06-17%20at%2020.04.36.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(2nd%20generation)%20-%202019-09-21%20at%2011.26.39.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(2nd%20generation)%20-%202019-09-21%20at%2011.26.49.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(3rd%20generation)%20-%202019-09-21%20at%2011.19.51.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPad%20Pro%20(12.9-inch)%20(3rd%20generation)%20-%202019-09-21%20at%2011.22.30.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202019-09-21%20at%2011.12.27.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20Max%20-%202019-09-21%20at%2011.12.37.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-09-21%20at%2011.16.58.png",
+        "https://raw.githubusercontent.com/moonlight-stream/moonlight-ios/master/Screenshots/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-09-21%20at%2011.17.02.png"
+      ],
+      "links": {
+        "website": "https://moonlight-stream.org/",
+        "github": "https://github.com/moonlight-stream/moonlight-ios",
+        "download": "https://apps.apple.com/us/app/moonlight-game-streaming/id1000551566",
+        "documentation": "https://github.com/moonlight-stream/moonlight-docs/wiki"
+      },
+      "official": true,
+      "tags": [
+        "streaming",
+        "ios",
+        "mobile",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 1560,
+        "openIssues": 165,
+        "forks": 442,
+        "lastUpdated": "2025-10-09T02:56:42Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-qt",
+      "name": "Moonlight PC",
+      "tagline": "GameStream client for PCs (Windows, Mac, Linux, and Steam Link)",
+      "description": "Open source client for Sunshine and NVIDIA GameStream.",
+      "category": "sunshine:client",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "links": {
+        "website": "https://moonlight-stream.org/",
+        "github": "https://github.com/moonlight-stream/moonlight-qt",
+        "download": "https://github.com/moonlight-stream/moonlight-qt/releases/latest",
+        "documentation": "https://github.com/moonlight-stream/moonlight-docs/wiki"
+      },
+      "official": true,
+      "tags": [
+        "streaming",
+        "gamestream",
+        "client",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 16831,
+        "openIssues": 514,
+        "forks": 1026,
+        "lastUpdated": "2026-04-14T01:06:24Z",
+        "license": "GPL-3.0"
+      }
+    },
+    {
+      "id": "moonlight-tv",
+      "name": "Moonlight TV",
+      "tagline": "Lightweight NVIDIA GameStream Client, for LG webOS TV and embedded devices like Raspberry Pi",
+      "description": "Moonlight TV is a community version of Moonlight GameStream Client, made for large screens. It works on LG webOS powered TVs, and Raspberry Pi running Raspbian.",
+      "category": "sunshine:client",
+      "platforms": [
+        "tv"
+      ],
+      "icon": "https://github.com/moonlight-stream.png",
+      "screenshots": [
+        "https://user-images.githubusercontent.com/830358/141690137-529d3b94-b56a-4f24-a3c5-00a56eb30952.png",
+        "https://user-images.githubusercontent.com/830358/147389849-6907f614-dbd4-4c24-987e-1a214a9680d0.png",
+        "https://user-images.githubusercontent.com/830358/141690146-27ee2564-0cc8-43ef-a5b0-54b8487dda1e.png"
+      ],
+      "links": {
+        "github": "https://github.com/mariotaku/moonlight-tv",
+        "download": "https://github.com/mariotaku/moonlight-tv?tab=readme-ov-file#download",
+        "documentation": "https://github.com/mariotaku/moonlight-tv?tab=readme-ov-file"
+      },
+      "official": false,
+      "tags": [
+        "streaming",
+        "ps-vita",
+        "gaming"
+      ],
+      "compatibility": {
+        "sunshine": ">=0.1.0"
+      },
+      "github": {
+        "stars": 1340,
+        "openIssues": 60,
+        "forks": 55,
+        "lastUpdated": "2025-10-18T10:12:33Z",
+        "license": "GPL-3.0"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "sunshine:client",
+      "name": "Streaming Clients",
+      "description": "Applications to stream from your Sunshine host",
+      "icon": "monitor-play",
+      "originalId": "client",
+      "count": 10
+    },
+    {
+      "id": "sunshine:tool",
+      "name": "Companion Tools",
+      "description": "Utilities and tools that enhance your Sunshine experience",
+      "icon": "wrench",
+      "originalId": "tool",
+      "count": 0
+    }
+  ]
+}
