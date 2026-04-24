@@ -1,0 +1,99 @@
+[
+  {
+    "title": "遥光·阿西西",
+    "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw",
+    "description": "面向 PlayStation 串流场景持续打磨的一套客户端体验，当前覆盖iOS与原生鸿蒙设备，兼顾低延迟连接、自然操控与跨网络环境下的日常可用性。",
+    "icon": "./res/icon/ic_remotelight.png",
+    "iconAlt": "遥光图标",
+    "tags": ["iOS", "HarmonyOS", "RemoteLight"],
+    "featured": true,
+    "linkRows": [
+      [
+        {
+          "label": "鸿蒙版",
+          "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw"
+        },
+        {
+          "label": "iOS版 TestFlight",
+          "href": "https://testflight.apple.com/join/zXH5HdBD"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "月光·阿西西",
+    "href": "https://github.com/Axixi2233/moonlight-android/releases",
+    "description": "面向 PC 串流场景持续打磨的一套客户端体验，兼容英伟达gfe与sunshine协议，当前覆盖Android、iOS与原生鸿蒙设备，让串流在更轻量的移动使用场景里也足够自然。",
+    "icon": "./res/icon/ic_moonlight.png",
+    "iconAlt": "月光图标",
+    "tags": ["Android", "HarmonyOS", "Moonlight"],
+    "linkRows": [
+      [
+        {
+          "label": "安卓版",
+          "href": "https://pan.quark.cn/s/9a334d831290"
+        },
+        {
+          "label": "iOS版",
+          "href": "https://apps.apple.com/us/app/starlight-pc-streaming/id6761065654"
+        },
+        {
+          "label": "鸿蒙版",
+          "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.moonlight.hw"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "星光·阿西西",
+    "href": "https://github.com/Axixi2233/moonlight-ios",
+    "description": "面向 PC 串流场景，在iOS平台继续推进一致性与手感，让串流在更轻量的移动使用场景里也足够自然。",
+    "icon": "./res/icon/ic_moonlight.png",
+    "iconAlt": "星光图标",
+    "tags": ["iOS", "Starlight"],
+    "linkRows": [
+      [
+        {
+          "label": "App Store",
+          "href": "https://apps.apple.com/us/app/starlight-pc-streaming/id6761065654"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "手柄·阿西西",
+    "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.gamepad",
+    "description": "面向多类手柄设备提供检测与性能分析能力，覆盖 Android 与鸿蒙平台，支持按键、摇杆、震动、体感与轮询率等关键状态的可视化查看。",
+    "icon": "./res/icon/ic_gamepad.png",
+    "iconAlt": "手柄图标",
+    "tags": ["Android", "HarmonyOS", "GamePadTest"],
+    "linkRows": [
+      [
+        {
+          "label": "安卓版",
+          "href": "https://pan.quark.cn/s/243981402e82"
+        },
+        {
+          "label": "鸿蒙版",
+          "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.gamepad"
+        }
+      ]
+    ]
+  },
+  {
+    "title": "千秋·阿西西",
+    "href": "https://github.com/Axixi2233/chiaki-android/releases",
+    "description": "面向 Android 设备延续 PlayStation 串流体验的另一条产品线，聚焦连接稳定性、操控适配与更直接的远程游玩体验。",
+    "icon": "./res/icon/ic_chiaki.png",
+    "iconAlt": "千秋图标",
+    "tags": ["Android", "Chiaki"],
+    "linkRows": [
+      [
+        {
+          "label": "网盘",
+          "href": "https://pan.quark.cn/s/f7d71d7245fe"
+        }
+      ]
+    ]
+  }
+]

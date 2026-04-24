@@ -78,111 +78,9 @@
         </p>
       </div>
 
-      <div class="project-grid">
-
-        <article class="project-card project-card-featured">
-          <div class="project-card-head">
-            <div class="project-meta">
-              <span class="tag">iOS</span>
-              <span class="tag">HarmonyOS</span>
-              <span class="tag">RemoteLight</span>
-            </div>
-            <img class="project-card-icon" src="./res/icon/ic_remotelight.png" alt="遥光图标">
-          </div>
-          <h3>
-            <a class="project-title-link" href="https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw">遥光·阿西西</a>
-          </h3>
-          <p>
-            面向 PlayStation 串流场景持续打磨的一套客户端体验，当前覆盖iOS与原生鸿蒙设备，兼顾低延迟连接、自然操控与跨网络环境下的日常可用性。
-          </p>
-          <div class="project-link-group">
-            <div class="project-link-row">
-              <a href="https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw">鸿蒙版</a>
-              <a href="https://testflight.apple.com/join/zXH5HdBD">iOS版 TestFlight</a>
-            </div>
-          </div>
-        </article>
-
+      <div class="project-grid" id="project-grid">
         <article class="project-card">
-          <div class="project-card-head">
-            <div class="project-meta">
-              <span class="tag">Android</span>
-              <span class="tag">HarmonyOS</span>
-              <span class="tag">Moonlight</span>
-            </div>
-            <img class="project-card-icon" src="./res/icon/ic_moonlight.png" alt="月光图标">
-          </div>
-          <h3>
-            <a class="project-title-link" href="https://github.com/Axixi2233/moonlight-android/releases">月光·阿西西</a>
-          </h3>
-          <p>
-            面向 PC 串流场景持续打磨的一套客户端体验，兼容英伟达gfe与sunshine协议，当前覆盖Android、iOS与原生鸿蒙设备，让串流在更轻量的移动使用场景里也足够自然。
-          </p>
-          <div class="project-link-row">
-            <a href="https://pan.quark.cn/s/9a334d831290">安卓版</a>
-            <a href="https://apps.apple.com/us/app/starlight-pc-streaming/id6761065654">iOS版</a>
-            <a href="https://appgallery.huawei.com/app/detail?id=cn.axi.moonlight.hw">鸿蒙版</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-head">
-            <div class="project-meta">
-              <span class="tag">iOS</span>
-              <span class="tag">Starlight</span>
-            </div>
-            <img class="project-card-icon" src="./res/icon/ic_moonlight.png" alt="星光图标">
-          </div>
-          <h3>
-            <a class="project-title-link" href="https://github.com/Axixi2233/moonlight-ios">星光·阿西西</a>
-          </h3>
-          <p>
-            面向 PC 串流场景，在iOS平台继续推进一致性与手感，让串流在更轻量的移动使用场景里也足够自然。
-          </p>
-          <div class="project-link-row">
-            <a href="https://apps.apple.com/us/app/starlight-pc-streaming/id6761065654">App Store</a>
-<!--            <a href="https://testflight.apple.com/join/7H78uWZT">TestFlight</a>-->
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-head">
-            <div class="project-meta">
-              <span class="tag">Android</span>
-              <span class="tag">HarmonyOS</span>
-              <span class="tag">GamePadTest</span>
-            </div>
-            <img class="project-card-icon" src="./res/icon/ic_gamepad.png" alt="手柄图标">
-          </div>
-          <h3>
-            <a class="project-title-link" href="https://appgallery.huawei.com/app/detail?id=cn.axi.gamepad">手柄·阿西西</a>
-          </h3>
-          <p>
-            面向多类手柄设备提供检测与性能分析能力，覆盖 Android 与鸿蒙平台，支持按键、摇杆、震动、体感与轮询率等关键状态的可视化查看。
-          </p>
-          <div class="project-link-row">
-            <a href="https://pan.quark.cn/s/243981402e82">安卓版</a>
-            <a href="https://appgallery.huawei.com/app/detail?id=cn.axi.gamepad">鸿蒙版</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card-head">
-            <div class="project-meta">
-              <span class="tag">Android</span>
-              <span class="tag">Chiaki</span>
-            </div>
-            <img class="project-card-icon" src="./res/icon/ic_chiaki.png" alt="千秋图标">
-          </div>
-          <h3>
-            <a class="project-title-link" href="https://github.com/Axixi2233/chiaki-android/releases">千秋·阿西西</a>
-          </h3>
-          <p>
-            面向 Android 设备延续 PlayStation 串流体验的另一条产品线，聚焦连接稳定性、操控适配与更直接的远程游玩体验。
-          </p>
-          <div class="project-link-row">
-            <a href="https://pan.quark.cn/s/f7d71d7245fe">网盘</a>
-          </div>
+          <p>项目加载中...</p>
         </article>
       </div>
     </section>
@@ -216,30 +114,123 @@
 
   <script>
     (() => {
+      const projectGrid = document.querySelector("#project-grid");
       const heroRotator = document.querySelector("[data-hero-rotator]");
-      const phrases = ["月光", "星光", "遥光", "手柄"];
+      const fallbackPhrases = ["月光", "星光", "遥光", "手柄"];
 
-      if (!heroRotator || phrases.length <= 1) {
-        return;
-      }
+      const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "\"": "&quot;",
+        "'": "&#39;"
+      }[char]));
 
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const renderProjects = (projects) => {
+        if (!projectGrid) {
+          return;
+        }
+
+        if (!Array.isArray(projects) || projects.length === 0) {
+          projectGrid.innerHTML = `
+            <article class="project-card">
+              <p>暂时还没有可展示的项目数据。</p>
+            </article>
+          `;
+          return;
+        }
+
+        projectGrid.innerHTML = projects.map((project) => {
+          const tags = Array.isArray(project.tags) ? project.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("") : "";
+          const linkRows = Array.isArray(project.linkRows) ? project.linkRows.map((row) => {
+            const links = Array.isArray(row) ? row.map((link) => `
+              <a href="${escapeHtml(link.href)}">${escapeHtml(link.label)}</a>
+            `).join("") : "";
+
+            return `<div class="project-link-row">${links}</div>`;
+          }).join("") : "";
+
+          return `
+            <article class="project-card${project.featured ? " project-card-featured" : ""}">
+              <div class="project-card-head">
+                <div class="project-meta">${tags}</div>
+                <img class="project-card-icon" src="${escapeHtml(project.icon)}" alt="${escapeHtml(project.iconAlt || project.title)}">
+              </div>
+              <h3>
+                <a class="project-title-link" href="${escapeHtml(project.href)}">${escapeHtml(project.title)}</a>
+              </h3>
+              <p>${escapeHtml(project.description)}</p>
+              <div class="project-link-group">${linkRows}</div>
+            </article>
+          `;
+        }).join("");
+      };
+
+      const startRotator = (phrases) => {
+        if (!heroRotator || phrases.length <= 1) {
+          return;
+        }
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          heroRotator.textContent = phrases[0];
+          heroRotator.classList.add("is-visible");
+          return;
+        }
+
+        let currentIndex = 0;
+
         heroRotator.textContent = phrases[0];
         heroRotator.classList.add("is-visible");
-        return;
-      }
 
-      let currentIndex = 0;
+        window.setInterval(() => {
+          currentIndex = (currentIndex + 1) % phrases.length;
+          heroRotator.classList.remove("is-visible");
 
-      window.setInterval(() => {
-        currentIndex = (currentIndex + 1) % phrases.length;
-        heroRotator.classList.remove("is-visible");
+          window.setTimeout(() => {
+            heroRotator.textContent = phrases[currentIndex];
+            heroRotator.classList.add("is-visible");
+          }, 180);
+        }, 2400);
+      };
 
-        window.setTimeout(() => {
-          heroRotator.textContent = phrases[currentIndex];
-          heroRotator.classList.add("is-visible");
-        }, 180);
-      }, 2400);
+      const extractPhrases = (projects) => {
+        if (!Array.isArray(projects)) {
+          return fallbackPhrases;
+        }
+
+        const titles = projects.map((project) => String(project.title || "").split("·")[0].trim()).filter(Boolean);
+        return [...new Set(titles)].length > 0 ? [...new Set(titles)] : fallbackPhrases;
+      };
+
+      const initProjects = async () => {
+        try {
+          const response = await fetch("./res/config/projects.json");
+
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const projects = await response.json();
+          renderProjects(projects);
+          startRotator(extractPhrases(projects));
+        } catch (error) {
+          if (projectGrid) {
+            const message = window.location.protocol === "file:"
+              ? "当前是直接打开的本地文件，请通过静态服务器访问。"
+              : "项目数据加载失败，请稍后重试。";
+
+            projectGrid.innerHTML = `
+              <article class="project-card">
+                <p>${message}</p>
+              </article>
+            `;
+          }
+
+          startRotator(fallbackPhrases);
+        }
+      };
+
+      initProjects();
     })();
   </script>
 </body>
