@@ -397,6 +397,29 @@ main {
   margin-bottom: 18px;
 }
 
+.project-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-card-head .project-meta {
+  margin-bottom: 0;
+}
+
+.project-card-icon {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+  flex: 0 0 auto;
+}
+
 .tag {
   display: inline-flex;
   align-items: center;
@@ -406,7 +429,6 @@ main {
   color: #d6e9ff;
   font: 700 0.75rem/1 "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   background: rgba(116, 192, 252, 0.12);
   border: 1px solid rgba(116, 192, 252, 0.18);
 }
@@ -439,9 +461,15 @@ main {
 
 .project-link-row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 16px;
   align-items: center;
+}
+
+.project-link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .project-card a:hover,

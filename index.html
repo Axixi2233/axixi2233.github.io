@@ -16,7 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="./style.css?v=20260414-1">
+  <link rel="stylesheet" href="./style.css?v=20260424-1">
 </head>
 <body class="home-page">
   <header class="nav">
@@ -65,20 +65,6 @@
             <a class="button button-secondary" href="./credits.html">赞赏</a>
           </div>
 
-          <div class="hero-stats">
-            <div class="stat-card">
-              <strong>7</strong>
-              <span>当前展示项目</span>
-            </div>
-            <div class="stat-card">
-              <strong>3</strong>
-              <span>覆盖平台</span>
-            </div>
-            <div class="stat-card">
-              <strong>∞</strong>
-              <span>持续迭代中</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -94,103 +80,110 @@
 
       <div class="project-grid">
 
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="tag">HarmonyOS</span>
-            <span class="tag">遥光</span>
-          </div>
-          <h3>
-            <a class="project-title-link" href="#">遥光·阿西西 鸿蒙版</a>
-          </h3>
-          <p>
-            遥光·阿西西 鸿蒙版是一款专为鸿蒙设备用户打造的PlayStation 平台串流与远程连接 的工具应用，旨在为用户提供稳定、低延迟的主机访问体验。
-          </p>
-          <a href="https://appgallery.huawei.com/link/invite-test-wap?taskId=755ea755f993563806801e4fa7470c80&invitationCode=5qyaMfQLP9L">内测链接</a>
-        </article>
-
         <article class="project-card project-card-featured">
-          <div class="project-meta">
-            <span class="tag">Android</span>
-            <span class="tag">Moonlight</span>
+          <div class="project-card-head">
+            <div class="project-meta">
+              <span class="tag">iOS</span>
+              <span class="tag">HarmonyOS</span>
+              <span class="tag">RemoteLight</span>
+            </div>
+            <img class="project-card-icon" src="./res/icon/ic_remotelight.png" alt="遥光图标">
           </div>
           <h3>
-            <a class="project-title-link" href="https://github.com/Axixi2233/moonlight-android/releases">月光·阿西西 Android版</a>
+            <a class="project-title-link" href="https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw">遥光·阿西西</a>
           </h3>
           <p>
-            面向 Android 设备优化串流体验，适合希望获得更稳定、更顺滑远程游玩体验的用户。
+            面向 PlayStation 串流场景持续打磨的一套客户端体验，当前覆盖iOS与原生鸿蒙设备，兼顾低延迟连接、自然操控与跨网络环境下的日常可用性。
           </p>
-          <a href="https://pan.quark.cn/s/9a334d831290">网盘</a>
+          <div class="project-link-group">
+            <div class="project-link-row">
+              <a href="https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw">鸿蒙版</a>
+              <a href="https://testflight.apple.com/join/zXH5HdBD">iOS版 TestFlight</a>
+            </div>
+          </div>
         </article>
 
         <article class="project-card">
-          <div class="project-meta">
-            <span class="tag">iOS</span>
-            <span class="tag">Moonlight</span>
+          <div class="project-card-head">
+            <div class="project-meta">
+              <span class="tag">Android</span>
+              <span class="tag">HarmonyOS</span>
+              <span class="tag">Moonlight</span>
+            </div>
+            <img class="project-card-icon" src="./res/icon/ic_moonlight.png" alt="月光图标">
           </div>
           <h3>
-            <a class="project-title-link" href="https://github.com/Axixi2233/moonlight-ios">星光·阿西西 iOS版</a>
+            <a class="project-title-link" href="https://github.com/Axixi2233/moonlight-android/releases">月光·阿西西</a>
           </h3>
           <p>
-            针对苹果生态继续推进一致性与手感，让串流在更轻量的移动使用场景里也足够自然。
+            面向 PC 串流场景持续打磨的一套客户端体验，兼容英伟达gfe与sunshine协议，当前覆盖Android、iOS与原生鸿蒙设备，让串流在更轻量的移动使用场景里也足够自然。
           </p>
           <div class="project-link-row">
-            <a href="https://testflight.apple.com/join/7H78uWZT">TestFlight</a>
+            <a href="https://pan.quark.cn/s/9a334d831290">安卓版</a>
+            <a href="https://apps.apple.com/us/app/starlight-pc-streaming/id6761065654">iOS版</a>
+            <a href="https://appgallery.huawei.com/app/detail?id=cn.axi.moonlight.hw">鸿蒙版</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <div class="project-meta">
+              <span class="tag">iOS</span>
+              <span class="tag">Starlight</span>
+            </div>
+            <img class="project-card-icon" src="./res/icon/ic_moonlight.png" alt="星光图标">
+          </div>
+          <h3>
+            <a class="project-title-link" href="https://github.com/Axixi2233/moonlight-ios">星光·阿西西</a>
+          </h3>
+          <p>
+            面向 PC 串流场景，在iOS平台继续推进一致性与手感，让串流在更轻量的移动使用场景里也足够自然。
+          </p>
+          <div class="project-link-row">
             <a href="https://apps.apple.com/us/app/starlight-pc-streaming/id6761065654">App Store</a>
+<!--            <a href="https://testflight.apple.com/join/7H78uWZT">TestFlight</a>-->
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-meta">
-            <span class="tag">HarmonyOS</span>
-            <span class="tag">Moonlight</span>
+          <div class="project-card-head">
+            <div class="project-meta">
+              <span class="tag">Android</span>
+              <span class="tag">HarmonyOS</span>
+              <span class="tag">GamePadTest</span>
+            </div>
+            <img class="project-card-icon" src="./res/icon/ic_gamepad.png" alt="手柄图标">
           </div>
           <h3>
-            <a class="project-title-link" href="https://appgallery.huawei.com/app/detail?id=cn.axi.moonlight.hw">月光·阿西西 鸿蒙版</a>
+            <a class="project-title-link" href="https://appgallery.huawei.com/app/detail?id=cn.axi.gamepad">手柄·阿西西</a>
           </h3>
           <p>
-            延伸到鸿蒙平台，覆盖更多设备类型，兼顾系统特性与整体交互体验的一致表达。
+            面向多类手柄设备提供检测与性能分析能力，覆盖 Android 与鸿蒙平台，支持按键、摇杆、震动、体感与轮询率等关键状态的可视化查看。
           </p>
+          <div class="project-link-row">
+            <a href="https://pan.quark.cn/s/243981402e82">安卓版</a>
+            <a href="https://appgallery.huawei.com/app/detail?id=cn.axi.gamepad">鸿蒙版</a>
+          </div>
         </article>
 
         <article class="project-card">
-          <div class="project-meta">
-            <span class="tag">Android</span>
-            <span class="tag">Chiaki</span>
+          <div class="project-card-head">
+            <div class="project-meta">
+              <span class="tag">Android</span>
+              <span class="tag">Chiaki</span>
+            </div>
+            <img class="project-card-icon" src="./res/icon/ic_chiaki.png" alt="千秋图标">
           </div>
           <h3>
-            <a class="project-title-link" href="https://github.com/Axixi2233/chiaki-android/releases">千秋·阿西西 Android版</a>
+            <a class="project-title-link" href="https://github.com/Axixi2233/chiaki-android/releases">千秋·阿西西</a>
           </h3>
           <p>
-            面向 PS5 串流场景持续打磨 Android 端体验，在连接、操作与整体使用流程上尽量做到更顺手、更稳定。
+            面向 Android 设备延续 PlayStation 串流体验的另一条产品线，聚焦连接稳定性、操控适配与更直接的远程游玩体验。
           </p>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="tag">Android</span>
-            <span class="tag">GamePadTest</span>
+          <div class="project-link-row">
+            <a href="https://pan.quark.cn/s/f7d71d7245fe">网盘</a>
           </div>
-          <h3>
-            <a class="project-title-link" href="https://pan.quark.cn/s/243981402e82">手柄·阿西西 Android版</a>
-          </h3>
-          <p>
-            面向多类手柄设备提供检测与性能分析能力，支持按键、摇杆、震动、体感与轮询率等关键状态的可视化查看，方便更直观地判断连接与响应表现。
-          </p>
         </article>
-
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="tag">HarmonyOS</span>
-            <span class="tag">GamePadTest</span>
-          </div>
-          <h3>
-            <a class="project-title-link" href="https://appgallery.huawei.com/app/detail?id=cn.axi.gamepad">手柄·阿西西 鸿蒙版</a>
-          </h3>
-          <p>
-            将手柄检测与性能分析能力延伸到鸿蒙平台，围绕输入状态、震动反馈、体感传感器与响应表现提供更直观的可视化观察与验证。
-          </p>
-        </article>
-
       </div>
     </section>
 
