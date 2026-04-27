@@ -97,7 +97,7 @@
 ### 6.4 PSN Account ID（Base64）获取
 
 - 推荐方式：在 `PSN 账号管理` 中完成登录或导入重定向 URL，应用会自动拿到 `user_id` 并计算 `Account ID (Base64)`，无需手动转换。
-- 手动方式：可通过 [https://psn.flipscreen.games/](https://psn.flipscreen.games/) 查询 `PSN Account ID (Base64)`。
+- 手动方式：可通过 [https://psn.flipscreen.games/](https://psn.flipscreen.games/)或者  [https://www.psntools.com/psn/checker/](https://www.psntools.com/psn/checker/) 查询 `PSN Account ID (Base64)`。
 - 特别注意：添加主机页填写 **Base64 格式** 的 Account ID，不要填写十进制 `user_id`。
 - (注)添加主机页已支持自动转换：如果输入的是纯数字 `user_id`，提交注册时会自动转成 Base64 并回填。
 - 示例：`4201313478908013781` 会自动转换为 `1Y/JW1d6sUs=`。
