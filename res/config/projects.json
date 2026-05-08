@@ -14,6 +14,10 @@
           "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw"
         },
         {
+          "label": "iOS版",
+          "href": "https://apps.apple.com/us/app/%E9%81%A5%E5%85%89-%E9%98%BF%E8%A5%BF%E8%A5%BF/id6763110430?l=zh-Hans-CN"
+        },
+        {
           "label": "iOS版 TestFlight",
           "href": "https://testflight.apple.com/join/zXH5HdBD"
         }
