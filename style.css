@@ -917,6 +917,7 @@ main {
   color: #d6e9ff;
   background: rgba(116, 192, 252, 0.12);
   border: 1px solid rgba(116, 192, 252, 0.18);
+  text-transform: none;
 }
 
 .help-card h3 {
