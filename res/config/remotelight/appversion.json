@@ -2,9 +2,9 @@
   "appID": "cn.axi.remotelight",
   "data": {
     "latest": {
-      "code": 2,
-      "versionName": "1.0.1",
-      "desc": "-本次更新\n1、对外发布第一个版本。\n2、对外发布第一个版本。\n3、对外发布第一个版本。\n4、对外发布第一个版本。",
+      "code": 1,
+      "versionName": "1.0.0",
+      "desc": "-本次更新\n1、对外发布第一个版本。",
       "quark": "https://pan.quark.cn/s/9a334d831290",
       "baidu": "https://pan.baidu.com/s/1yWEiP4ew0RbBMj0jjCWg8g?pwd=axix"
     },
