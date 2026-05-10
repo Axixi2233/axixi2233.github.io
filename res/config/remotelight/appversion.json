@@ -4,15 +4,15 @@
     "latest": {
       "code": 1,
       "versionName": "1.0.0",
-      "desc": "1、对外发布第一个版本。",
-      "quark": "https://pan.quark.cn/s/9a334d831290",
-      "baidu": "https://pan.baidu.com/s/1yWEiP4ew0RbBMj0jjCWg8g?pwd=axix"
+      "desc": "初始版本",
+      "quark": "https://pan.quark.cn/s/29e3e7624969",
+      "baidu": "https://pan.baidu.com/s/1HV8r77HwypzCgSKT0hsC1g?pwd=axix"
     },
     "history": [
       {
         "code": 1,
         "versionName": "1.0.0",
-        "desc": "1、对外发布第一个版本。"
+        "desc": "初始版本"
       }
     ]
   }
