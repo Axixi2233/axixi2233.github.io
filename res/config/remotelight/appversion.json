@@ -2,9 +2,9 @@
   "appID": "cn.axi.remotelight",
   "data": {
     "latest": {
-      "code": 1,
-      "versionName": "1.0.0",
-      "desc": "初始版本",
+      "code": 2,
+      "versionName": "1.0.1",
+      "desc": "修复添加页输入法问题",
       "quark": "https://pan.quark.cn/s/29e3e7624969",
       "baidu": "https://pan.baidu.com/s/1HV8r77HwypzCgSKT0hsC1g?pwd=axix"
     },
