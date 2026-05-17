@@ -2,10 +2,10 @@
   {
     "title": "遥光·阿西西",
     "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw",
-    "description": "面向 PlayStation 串流场景持续打磨的一套客户端体验，当前覆盖iOS与原生鸿蒙设备，兼顾低延迟连接、自然操控与跨网络环境下的日常可用性。",
+    "description": "面向 PlayStation 串流场景持续打磨的一套客户端体验，当前覆盖安卓、iOS与原生鸿蒙设备，兼顾低延迟连接、自然操控与跨网络环境下的日常可用性。",
     "icon": "./res/icon/ic_remotelight.png",
     "iconAlt": "遥光图标",
-    "tags": ["iOS", "HarmonyOS", "RemoteLight"],
+    "tags": ["Android","iOS", "HarmonyOS", "PS串流"],
     "featured": true,
     "linkRows": [
       [
@@ -20,6 +20,10 @@
         {
           "label": "iOS版 TestFlight",
           "href": "https://testflight.apple.com/join/zXH5HdBD"
+        },
+        {
+          "label": "安卓版",
+          "href": "https://pan.quark.cn/s/29e3e7624969"
         }
       ]
     ]
@@ -30,7 +34,7 @@
     "description": "面向 PC 串流场景持续打磨的一套客户端体验，兼容英伟达gfe与sunshine协议，当前覆盖Android、iOS与原生鸿蒙设备，让串流在更轻量的移动使用场景里也足够自然。",
     "icon": "./res/icon/ic_moonlight.png",
     "iconAlt": "月光图标",
-    "tags": ["Android", "HarmonyOS", "Moonlight"],
+    "tags": ["Android", "HarmonyOS", "PC串流"],
     "linkRows": [
       [
         {
@@ -54,7 +58,7 @@
     "description": "面向 PC 串流场景，在iOS平台继续推进一致性与手感，让串流在更轻量的移动使用场景里也足够自然。",
     "icon": "./res/icon/ic_moonlight.png",
     "iconAlt": "星光图标",
-    "tags": ["iOS", "Starlight"],
+    "tags": ["iOS", "Starlight","PC串流"],
     "linkRows": [
       [
         {
