@@ -2,17 +2,22 @@
   "appID": "cn.axi.remotelight",
   "data": {
     "latest": {
-      "code": 3,
-      "versionName": "1.0.2",
-      "desc": "1、游戏菜单-画面比例;\n2、设置-按键映射;\n3、设置-虚拟控件自动隐藏;",
+      "code": 4,
+      "versionName": "1.0.3",
+      "desc": "1、设置-新增日志采集功能;\n2、修复部分华为设备设备兼容性;",
       "quark": "https://pan.quark.cn/s/29e3e7624969",
       "baidu": "https://pan.baidu.com/s/1HV8r77HwypzCgSKT0hsC1g?pwd=axix"
     },
     "history": [
       {
+        "code": 3,
+        "versionName": "1.0.2",
+        "desc": "修复添加页输入法问题"
+      },
+      {
         "code": 2,
         "versionName": "1.0.1",
-        "desc": "修复添加页输入法问题"
+        "desc": "1、游戏菜单-画面比例;\n2、设置-按键映射;\n3、设置-虚拟控件自动隐藏;"
       }
     ]
   }
