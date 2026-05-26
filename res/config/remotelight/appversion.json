@@ -2,13 +2,18 @@
   "appID": "cn.axi.remotelight",
   "data": {
     "latest": {
-      "code": 4,
-      "versionName": "1.0.3",
-      "desc": "1、设置-新增日志采集功能;\n2、修复部分华为设备设备兼容性;",
+      "code": 5,
+      "versionName": "1.0.4",
+      "desc": "1、设置-新增反转手柄体感X轴方向;\n2、修复谷粒DS5适配器原生DS5震动；",
       "quark": "https://pan.quark.cn/s/29e3e7624969",
       "baidu": "https://pan.baidu.com/s/1HV8r77HwypzCgSKT0hsC1g?pwd=axix"
     },
     "history": [
+      {
+        "code": 4,
+        "versionName": "1.0.3",
+        "desc": "1、设置-新增日志采集功能;\n2、修复部分华为设备设备兼容性;"
+      },
       {
         "code": 3,
         "versionName": "1.0.2",
