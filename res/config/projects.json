@@ -105,6 +105,26 @@
     ]
   },
   {
+    "title": "副屏·阿西西",
+    "href": "https://pan.quark.cn/s/21da1e52d9cf",
+    "description": "一款安卓端面向 AR 眼镜和外接显示器的副屏控制工具。连接外接屏后，可在手机上使用触控板控制副屏应用，实现光标移动、点击、滚动、返回、截图、息屏等常用操作，让手机变成外接屏的便携控制器。",
+    "icon": "./res/icon/ic_arcast.png",
+    "iconAlt": "副屏图标",
+    "tags": ["Android", "AR Glasses"],
+    "linkRows": [
+      [
+        {
+          "label": "夸克",
+          "href": "https://pan.quark.cn/s/21da1e52d9cf"
+        },
+        {
+          "label": "百度",
+          "href": "https://pan.baidu.com/s/1tWko7ZsVoSiokAcTr150cQ?提取码:axix"
+        }
+      ]
+    ]
+  },
+  {
     "title": "千秋·阿西西",
     "href": "https://github.com/Axixi2233/chiaki-android/releases",
     "description": "面向 Android 设备延续 PlayStation 串流体验的另一条产品线，聚焦连接稳定性、操控适配与更直接的远程游玩体验。",
