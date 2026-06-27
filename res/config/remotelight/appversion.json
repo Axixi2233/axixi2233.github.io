@@ -2,13 +2,18 @@
   "appID": "cn.axi.remotelight",
   "data": {
     "latest": {
-      "code": 5,
-      "versionName": "1.0.4",
-      "desc": "1、设置-新增反转手柄体感X轴方向;\n2、修复谷粒DS5适配器原生DS5震动；",
+      "code": 6,
+      "versionName": "1.0.5",
+      "desc": "修复部分机型震动停不下来的问题",
       "quark": "https://pan.quark.cn/s/29e3e7624969",
       "baidu": "https://pan.baidu.com/s/1HV8r77HwypzCgSKT0hsC1g?pwd=axix"
     },
     "history": [
+      {
+        "code": 5,
+        "versionName": "1.0.4",
+        "desc": "1、设置-新增反转手柄体感X轴方向;\n2、修复谷粒DS5适配器原生DS5震动；"
+      },
       {
         "code": 4,
         "versionName": "1.0.3",
