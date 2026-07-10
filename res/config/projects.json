@@ -125,6 +125,22 @@
     ]
   },
   {
+    "title": "掌机·阿西西",
+    "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.gplay",
+    "description": "掌机·阿西西是一款面向 HarmonyOS 的复古掌机模拟器与本地游戏库应用，帮助你更轻松地整理、启动与游玩自己拥有的经典掌机游戏。",
+    "icon": "./res/icon/icon_gplay.png",
+    "iconAlt": "掌机图标",
+    "tags": ["HarmonyOS","复古模拟器"],
+    "linkRows": [
+      [
+        {
+          "label": "鸿蒙版",
+          "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.gplay"
+        }
+      ]
+    ]
+  },
+  {
     "title": "千秋·阿西西",
     "href": "https://github.com/Axixi2233/chiaki-android/releases",
     "description": "面向 Android 设备延续 PlayStation 串流体验的另一条产品线，聚焦连接稳定性、操控适配与更直接的远程游玩体验。",
