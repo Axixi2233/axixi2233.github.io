@@ -2,7 +2,7 @@
   {
     "title": "遥光·阿西西",
     "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.chiaki.hw",
-    "description": "面向 PlayStation 串流场景持续打磨的一套客户端体验，当前覆盖安卓、iOS与原生鸿蒙设备，兼顾低延迟连接、自然操控与跨网络环境下的日常可用性。",
+    "description": "全新编写的 PS5 串流客户端，支持局域网、远程直连与 PSN 远程串流，并提供虚拟手柄、外接手柄和体感控制等能力。",
     "icon": "./res/icon/ic_remotelight.png",
     "iconAlt": "遥光图标",
     "tags": ["Android","iOS", "HarmonyOS", "PS串流"],
@@ -31,7 +31,7 @@
   {
     "title": "月光·阿西西",
     "href": "https://github.com/Axixi2233/moonlight-android/releases",
-    "description": "面向 PC 串流场景持续打磨的一套客户端体验，兼容英伟达gfe与sunshine协议，当前覆盖Android、iOS与原生鸿蒙设备，让串流在更轻量的移动使用场景里也足够自然。",
+    "description": "PC 游戏串流客户端，可连接 NVIDIA GameStream 和 Sunshine 主机，提供低延迟、高画质的远程游玩体验。",
     "icon": "./res/icon/ic_moonlight.png",
     "iconAlt": "月光图标",
     "tags": ["Android", "HarmonyOS", "PC串流"],
@@ -55,7 +55,7 @@
   {
     "title": "星光·阿西西",
     "href": "https://github.com/Axixi2233/moonlight-ios",
-    "description": "面向 PC 串流场景，在iOS平台继续推进一致性与手感，让串流在更轻量的移动使用场景里也足够自然。",
+    "description": "面向 iPhone 与 iPad 的 PC 游戏串流客户端，可连接 Sunshine 主机，并针对 iOS 的触控、手柄和移动使用场景进行优化。",
     "icon": "./res/icon/ic_moonlight.png",
     "iconAlt": "星光图标",
     "tags": ["iOS", "Starlight","PC串流"],
@@ -71,7 +71,7 @@
   {
     "title": "手柄·阿西西",
     "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.gamepad",
-    "description": "面向多类手柄设备提供检测与性能分析能力，覆盖 Android 与鸿蒙平台，支持按键、摇杆、震动、体感与轮询率等关键状态的可视化查看。",
+    "description": "手柄检测与性能分析工具，可直观查看按键、摇杆、扳机、震动、体感和轮询率等输入状态。",
     "icon": "./res/icon/ic_gamepad.png",
     "iconAlt": "手柄图标",
     "tags": ["Android", "HarmonyOS", "GamePadTest"],
@@ -91,7 +91,7 @@
   {
     "title": "UVC·阿西西",
     "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.usbcamera",
-    "description": "一款用于查看 UVC 视频输入的实用工具，可实时显示 USB 摄像头、UVC 采集卡等外接视频设备的画面，并支持截图与录制。",
+    "description": "面向 HarmonyOS 的 USB 视频采集工具，支持 UVC 摄像头与采集卡预览、多设备切换、截图、录像和声音监听。",
     "icon": "./res/icon/ic_uvc.png",
     "iconAlt": "UVC图标",
     "tags": ["HarmonyOS","UVC"],
@@ -107,7 +107,7 @@
   {
     "title": "副屏·阿西西",
     "href": "https://pan.quark.cn/s/21da1e52d9cf",
-    "description": "一款安卓端面向 AR 眼镜和外接显示器的副屏控制工具。连接外接屏后，可在手机上使用触控板控制副屏应用，实现光标移动、点击、滚动、返回、截图、息屏等常用操作，让手机变成外接屏的便携控制器。",
+    "description": "将 Android 手机变成 AR 眼镜或外接显示器的便携控制器，支持光标移动、点击、滚动、返回、截图和息屏等操作。",
     "icon": "./res/icon/ic_arcast.png",
     "iconAlt": "副屏图标",
     "tags": ["Android", "AR Glasses"],
@@ -127,7 +127,7 @@
   {
     "title": "掌机·阿西西",
     "href": "https://appgallery.huawei.com/app/detail?id=cn.axi.gplay",
-    "description": "掌机·阿西西是一款面向 HarmonyOS 的复古掌机模拟器与本地游戏库应用，帮助你更轻松地整理、启动与游玩自己拥有的经典掌机游戏。",
+    "description": "面向 HarmonyOS 的复古掌机模拟器与本地游戏库，支持 GB、GBC、GBA 游戏以及即时存档、皮肤和外接手柄。",
     "icon": "./res/icon/icon_gplay.png",
     "iconAlt": "掌机图标",
     "tags": ["HarmonyOS","复古模拟器"],
@@ -143,7 +143,7 @@
   {
     "title": "千秋·阿西西",
     "href": "https://github.com/Axixi2233/chiaki-android/releases",
-    "description": "面向 Android 设备延续 PlayStation 串流体验的另一条产品线，聚焦连接稳定性、操控适配与更直接的远程游玩体验。",
+    "description": "基于开源项目 Chiaki Android 分支二次开发的经典版 PlayStation 串流客户端，为 Android 设备提供稳定、直接的远程游玩体验。",
     "icon": "./res/icon/ic_chiaki.png",
     "iconAlt": "千秋图标",
     "tags": ["Android", "Chiaki"],

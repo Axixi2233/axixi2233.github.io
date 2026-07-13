@@ -16,7 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="./style.css?v=20260424-1">
+  <link rel="stylesheet" href="./style.css?v=20260713-4">
 </head>
 <body class="home-page">
   <header class="nav">
@@ -51,7 +51,11 @@
           <h1 class="hero-title">
             <span class="hero-title-static">做产品，也聊科技！</span>
             <span class="hero-title-series">
-              <span class="hero-title-rotator is-visible" data-hero-rotator>月光</span>
+              <span class="hero-title-rotator" data-hero-rotator>
+                <span class="hero-title-track">
+                  <span class="hero-title-word">月光</span>
+                </span>
+              </span>
               <span class="hero-title-suffix"> · 阿西西</span>
             </span>
           </h1>
@@ -116,9 +120,9 @@
     (() => {
       const projectGrid = document.querySelector("#project-grid");
       const heroRotator = document.querySelector("[data-hero-rotator]");
-      const fallbackPhrases = ["月光", "星光", "遥光", "手柄", "UVC","副屏","掌机"];
+      const fallbackPhrases = ["遥光", "月光", "星光", "手柄", "UVC", "副屏", "掌机", "千秋"];
 
-      const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({
+      const escapeHtml = (value) => String(value == null ? "" : value).replace(/[&<>"']/g, (char) => ({
         "&": "&amp;",
         "<": "&lt;",
         ">": "&gt;",
@@ -167,29 +171,66 @@
       };
 
       const startRotator = (phrases) => {
-        if (!heroRotator || phrases.length <= 1) {
+        if (!heroRotator || phrases.length === 0) {
           return;
         }
 
+        const track = heroRotator.querySelector(".hero-title-track");
+
+        if (!track) {
+          return;
+        }
+
+        track.textContent = "";
+        phrases.concat(phrases[0]).forEach((phrase) => {
+          const word = document.createElement("span");
+          word.className = "hero-title-word";
+          word.textContent = phrase;
+          track.appendChild(word);
+        });
+
+        const measureWidth = () => {
+          const ruler = document.createElement("span");
+          ruler.className = "hero-title-ruler";
+          heroRotator.appendChild(ruler);
+
+          const maxWidth = phrases.reduce((width, phrase) => {
+            ruler.textContent = phrase;
+            return Math.max(width, ruler.getBoundingClientRect().width);
+          }, 0);
+
+          ruler.remove();
+          heroRotator.style.width = `${Math.ceil(maxWidth)}px`;
+        };
+
+        measureWidth();
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(measureWidth);
+        }
+
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-          heroRotator.textContent = phrases[0];
-          heroRotator.classList.add("is-visible");
+          return;
+        }
+
+        if (phrases.length <= 1) {
           return;
         }
 
         let currentIndex = 0;
 
-        heroRotator.textContent = phrases[0];
-        heroRotator.classList.add("is-visible");
-
         window.setInterval(() => {
-          currentIndex = (currentIndex + 1) % phrases.length;
-          heroRotator.classList.remove("is-visible");
+          currentIndex += 1;
+          track.classList.add("is-animating");
+          track.style.transform = `translate3d(0, -${currentIndex * 1.25}em, 0)`;
 
-          window.setTimeout(() => {
-            heroRotator.textContent = phrases[currentIndex];
-            heroRotator.classList.add("is-visible");
-          }, 180);
+          if (currentIndex === phrases.length) {
+            window.setTimeout(() => {
+              track.classList.remove("is-animating");
+              track.style.transform = "translate3d(0, 0, 0)";
+              currentIndex = 0;
+              void track.offsetHeight;
+            }, 540);
+          }
         }, 2400);
       };
 
@@ -204,7 +245,7 @@
 
       const initProjects = async () => {
         try {
-          const response = await fetch("./res/config/projects.json");
+          const response = await fetch("./res/config/projects.json", { cache: "no-store" });
 
           if (!response.ok) {
             throw new Error(`HTTP ${response.status}`);
