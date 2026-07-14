@@ -2,9 +2,9 @@
   "appID": "cn.axi.remotelight",
   "data": {
     "latest": {
-      "code": 6,
-      "versionName": "1.0.5",
-      "desc": "修复部分机型震动停不下来的问题",
+      "code": 7,
+      "versionName": "1.0.6",
+      "desc": "遥光相连，触感随行。\n本次更新，我们带来了Razer Kishi 手柄原生触觉反馈支持;使用指南\n- 兼容雷蛇骑仕V3系列及Ultra系列手柄；\n- 连接手柄 进入串流界面 打开游戏菜单 选择USB手柄驱动；\n- 长按手柄Nexus+A键 切换到HID模式下使用，HID模式下支持扩展按键设置为C和Z键；\n- XINPUT模式为Xbox协议震动效果，HID模式为kishi原生音频触觉模式；\n- 完整性能信息 显示当前手柄在原生游戏震动与音频震动中的反馈状态；",
       "quark": "https://pan.quark.cn/s/29e3e7624969",
       "baidu": "https://pan.baidu.com/s/1HV8r77HwypzCgSKT0hsC1g?pwd=axix"
     },
