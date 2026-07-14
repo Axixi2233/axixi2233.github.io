@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="投屏·阿西西隐私政策">
+    <title>投屏·阿西西 隐私政策</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --background: #0e0d0a;
+            --surface: #19160f;
+            --surface-strong: #242015;
+            --text: #f6f2e8;
+            --muted: #aaa394;
+            --accent: #ffc21f;
+            --accent-soft: rgba(255, 194, 31, 0.14);
+            --border: rgba(255, 194, 31, 0.22);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background:
+                radial-gradient(circle at 90% 0%, rgba(255, 194, 31, 0.13), transparent 32rem),
+                linear-gradient(145deg, #11100c 0%, var(--background) 58%, #080807 100%);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            font-size: 16px;
+            line-height: 1.75;
+            min-height: 100vh;
+        }
+
+        main {
+            width: min(860px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 48px 0 64px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .app-mark {
+            display: inline-grid;
+            place-items: center;
+            width: 72px;
+            height: 72px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 21px;
+            background: #171717;
+            box-shadow: 0 12px 34px rgba(255, 194, 31, 0.12);
+        }
+
+        .app-mark img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(28px, 6vw, 40px);
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            margin: 8px 0 0;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .date {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .language-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 22px 0 0;
+        }
+
+        .language-switcher button {
+            appearance: none;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 7px 14px;
+            background: transparent;
+            color: var(--muted);
+            cursor: pointer;
+            font: inherit;
+            font-size: 14px;
+        }
+
+        .language-switcher button.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #17130a;
+            font-weight: 700;
+        }
+
+        .summary,
+        section,
+        .contact {
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            background: linear-gradient(145deg, rgba(36, 32, 21, 0.96), rgba(20, 18, 13, 0.96));
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+        }
+
+        .summary {
+            margin-bottom: 16px;
+            padding: 20px 22px;
+            color: #ded8c9;
+        }
+
+        .summary strong {
+            color: var(--accent);
+        }
+
+        section {
+            margin-top: 16px;
+            padding: 22px;
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            color: var(--accent);
+            font-size: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 22px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .contact {
+            margin-top: 16px;
+            padding: 22px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus-visible {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: var(--muted);
+            text-align: center;
+            font-size: 13px;
+        }
+
+        [data-language] {
+            display: none;
+        }
+
+        [data-language].active {
+            display: block;
+        }
+
+        @media (max-width: 560px) {
+            main {
+                width: min(100% - 20px, 860px);
+                padding-top: 30px;
+            }
+
+            section,
+            .summary,
+            .contact {
+                border-radius: 16px;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <div class="app-mark">
+            <img src="icon/ic_tvscreen.png" alt="投屏·阿西西 App 图标">
+        </div>
+        <h1>投屏·阿西西</h1>
+        <p class="tagline">让画面，自在抵达</p>
+        <p class="date">更新日期 / Last updated: 2026-07-14</p>
+        <div class="language-switcher" role="group" aria-label="Language">
+            <button type="button" data-target="zh" class="active">简体中文</button>
+            <button type="button" data-target="en">English</button>
+        </div>
+    </header>
+
+    <article data-language="zh" class="active">
+        <div class="summary">
+            <strong>隐私摘要：</strong>投屏·阿西西不要求注册账号，不包含广告、用户跟踪或第三方分析 SDK。投屏内容仅在您的设备和局域网内处理，不会被自动上传到我们运营的服务器。
+        </div>
+
+        <section>
+            <h2>1. 适用范围</h2>
+            <p>本隐私政策适用于“投屏·阿西西”（以下简称“本应用”）。本应用用于在同一局域网内接收画面与声音、发现和连接兼容设备、提供遥控操作，以及在您主动操作时保存截图和录屏。</p>
+        </section>
+
+        <section>
+            <h2>2. 我们处理的信息</h2>
+            <p>我们不通过本应用收集您的姓名、电话、邮箱、位置、通讯录或广告标识符。为了实现您选择使用的功能，本应用会在本机或局域网内处理以下信息：</p>
+            <ul>
+                <li><strong>局域网设备信息：</strong>附近兼容设备的名称、服务标识、网络连接信息和兼容能力，用于发现、连接、投屏与遥控。</li>
+                <li><strong>投屏内容：</strong>由您的发送设备传入的画面和声音。这些内容仅用于本机实时播放，除非您主动使用截图或录屏功能。</li>
+                <li><strong>配对与偏好设置：</strong>已配对设备的名称、服务标识、配对记录、身份凭据以及应用设置，用于下次快速连接和保留您的选项。</li>
+                <li><strong>诊断信息：</strong>仅在您主动开启“收集诊断日志”后，记录时间、编码化事件、连接阶段、状态码和错误信息。日志会隐藏设备身份、端口、认证数据和实现细节。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. 设备权限</h2>
+            <ul>
+                <li><strong>本地网络：</strong>用于发现、连接和遥控同一局域网内的兼容设备，并接收投屏内容。拒绝该权限将导致核心投屏与连接功能无法使用。</li>
+                <li><strong>照片（仅添加）：</strong>只在您截图或录屏时请求，用于将您主动生成的照片或视频保存到系统照片。本应用不读取您照片库中的其他内容。</li>
+                <li><strong>剪贴板：</strong>只在您点击“复制日志”时，将已脱敏的诊断信息写入剪贴板。</li>
+            </ul>
+            <p>本应用不请求麦克风、摄像头、位置、通讯录或广告跟踪权限。您可以随时在 iOS/iPadOS 的“设置”中更改已授予的权限。</p>
+        </section>
+
+        <section>
+            <h2>4. 存储、保留与删除</h2>
+            <ul>
+                <li>应用设置、配对记录和诊断信息保存在您的设备本地；敏感配对密钥会在适用时使用系统钥匙串保存。</li>
+                <li>您可在设备列表中选择“忘记配对”，也可在设置中关闭或清空诊断信息。关闭诊断收集时，本应用会清空已保存的诊断日志。</li>
+                <li>卸载应用会删除应用沙盒中的数据；个别由系统钥匙串管理的凭据可能依据系统规则继续保留。如需在卸载前删除配对记录，请先使用“忘记配对”。</li>
+                <li>已保存到系统照片的截图和录屏由您通过“照片”App 自行管理，卸载本应用不会删除这些文件。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. 信息传输、分享与第三方</h2>
+            <p>本应用不会将投屏内容、配对记录、诊断信息或其他个人信息自动发送给开发者或用于广告、用户画像与跟踪。投屏和遥控数据会在您选择的设备之间通过局域网传输，以完成您请求的功能。</p>
+            <p>“关于”页包含开发者主页和社交媒体的外部链接。只有当您主动点击时才会打开对应网站；外部网站处理信息的方式受其自身隐私政策约束。</p>
+        </section>
+
+        <section>
+            <h2>6. 信息安全</h2>
+            <p>本应用使用 iOS/iPadOS 沙盒、系统钥匙串以及连接协议提供的配对和加密机制保护本地数据与设备连接。但任何传输或存储方式都无法保证绝对安全，建议您使用可信任的局域网，并及时更新设备系统。</p>
+        </section>
+
+        <section>
+            <h2>7. 您的选择与权利</h2>
+            <p>您可以通过系统设置撤回本地网络或照片权限，通过本应用忘记配对设备、清空诊断信息，并通过“照片”App 删除已保存的截图和录屏。由于我们不运营用于存储您个人数据的远程账号或服务器，通常没有需要向我们申请导出或删除的云端个人数据。</p>
+        </section>
+
+        <section>
+            <h2>8. 未成年人隐私</h2>
+            <p>本应用不面向未满 14 周岁的儿童提供专门服务，也不会有意收集儿童的个人信息。如您认为我们在不知情的情况下收到了相关信息，请通过下方联系方式告知我们。</p>
+        </section>
+
+        <section>
+            <h2>9. 政策更新</h2>
+            <p>如果本应用的功能、权限或信息处理方式发生变化，我们可能更新本政策。新版本将在本页面公布并更新顶部日期；若发生重大变化，我们会在适用时通过应用内提示或其他合理方式告知您。</p>
+        </section>
+
+        <div class="contact">
+            <h2>10. 如何联系我们</h2>
+            <p>如您对本隐私政策或本应用的信息处理方式有疑问、意见或建议，请通过邮箱联系我们：</p>
+            <p><strong><a href="mailto:genng2019@gmail.com">genng2019@gmail.com</a></strong></p>
+            <p>我们会在合理期限内审阅并回复您的请求。</p>
+        </div>
+    </article>
+
+    <article data-language="en">
+        <div class="summary">
+            <strong>Privacy summary:</strong> 投屏·阿西西 does not require an account and contains no advertising, user tracking, or third-party analytics SDKs. Mirroring content is processed only on your devices and local network and is not automatically uploaded to a server operated by us.
+        </div>
+
+        <section>
+            <h2>1. Scope</h2>
+            <p>This Privacy Policy applies to 投屏·阿西西 (the "App"). The App receives video and audio on the same local network, discovers and connects to compatible devices, provides remote-control functions, and saves screenshots or recordings only when you request those actions.</p>
+        </section>
+
+        <section>
+            <h2>2. Information We Process</h2>
+            <p>We do not collect your name, phone number, email address, precise location, contacts, or advertising identifier through the App. To provide features you choose to use, the App processes the following information locally or on your local network:</p>
+            <ul>
+                <li><strong>Local-network device information:</strong> names, service identifiers, connection information, and compatibility capabilities of nearby compatible devices, used for discovery, connection, mirroring, and remote control.</li>
+                <li><strong>Mirroring content:</strong> video and audio sent by your source device. This content is processed for real-time playback on your device unless you explicitly capture a screenshot or start a recording.</li>
+                <li><strong>Pairing and preferences:</strong> paired-device names, service identifiers, pairing records, identity credentials, and App settings, used to reconnect and remember your choices.</li>
+                <li><strong>Diagnostic information:</strong> only when you enable "Collect Diagnostic Logs," the App records timestamps, coded events, connection phases, status codes, and error details. Logs redact device identities, ports, authentication data, and implementation details.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Device Permissions</h2>
+            <ul>
+                <li><strong>Local Network:</strong> used to discover, connect to, and control compatible devices on your local network and to receive mirroring content. Core connection and mirroring features cannot work without this permission.</li>
+                <li><strong>Photos (Add Only):</strong> requested only when you capture a screenshot or recording, so the App can add the item to Photos. The App does not read other items in your photo library.</li>
+                <li><strong>Clipboard:</strong> the App writes redacted diagnostic information to the clipboard only when you tap "Copy Logs."</li>
+            </ul>
+            <p>The App does not request access to your microphone, camera, location, contacts, or advertising tracking. You can change granted permissions at any time in iOS or iPadOS Settings.</p>
+        </section>
+
+        <section>
+            <h2>4. Storage, Retention, and Deletion</h2>
+            <ul>
+                <li>App settings, pairing records, and diagnostic information are stored locally on your device. Sensitive pairing keys are stored in the system Keychain where applicable.</li>
+                <li>You can use "Forget Pairing" in the device list and disable or clear diagnostics in Settings. Disabling diagnostic collection clears stored diagnostic logs.</li>
+                <li>Uninstalling the App removes data in its sandbox. Some credentials managed by the system Keychain may remain under system retention rules. To remove pairing records before uninstalling, use "Forget Pairing" first.</li>
+                <li>Screenshots and recordings saved to Photos remain under your control in the Photos app and are not deleted when you uninstall this App.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Transfers, Sharing, and Third Parties</h2>
+            <p>The App does not automatically send mirroring content, pairing records, diagnostic information, or other personal information to the developer, and does not use such information for advertising, profiling, or tracking. Mirroring and remote-control data travels between devices you select on your local network to perform the functions you request.</p>
+            <p>The About page contains external links to the developer's website and social-media profiles. A third-party site opens only when you tap its link, and its own privacy policy governs any information it processes.</p>
+        </section>
+
+        <section>
+            <h2>6. Information Security</h2>
+            <p>The App uses the iOS/iPadOS sandbox, system Keychain, and the pairing and encryption mechanisms provided by its connection protocols to protect local data and device connections. No transmission or storage method can guarantee absolute security. Use a trusted local network and keep your devices updated.</p>
+        </section>
+
+        <section>
+            <h2>7. Your Choices and Rights</h2>
+            <p>You can revoke Local Network or Photos permission in system Settings, forget paired devices and clear diagnostics in the App, and delete saved captures in Photos. Because we do not operate a remote account or server that stores your personal data, there is generally no cloud-hosted personal data to export or ask us to delete.</p>
+        </section>
+
+        <section>
+            <h2>8. Children's Privacy</h2>
+            <p>The App is not directed specifically to children under 14, and we do not knowingly collect children's personal information. If you believe relevant information has reached us unintentionally, please contact us using the details below.</p>
+        </section>
+
+        <section>
+            <h2>9. Changes to This Policy</h2>
+            <p>We may update this policy if the App's features, permissions, or information practices change. The revised policy will be published on this page with a new date. For material changes, we will provide an in-app notice or another reasonable notice when appropriate.</p>
+        </section>
+
+        <div class="contact">
+            <h2>10. Contact Us</h2>
+            <p>If you have questions, comments, or requests concerning this policy or the App's information practices, contact us at:</p>
+            <p><strong><a href="mailto:genng2019@gmail.com">genng2019@gmail.com</a></strong></p>
+            <p>We will review and respond to your request within a reasonable period.</p>
+        </div>
+    </article>
+
+    <footer>
+        <p>© 2026 投屏·阿西西</p>
+    </footer>
+</main>
+
+<script>
+    (function () {
+        const buttons = document.querySelectorAll("[data-target]");
+        const articles = document.querySelectorAll("[data-language]");
+
+        function setLanguage(language) {
+            document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+            buttons.forEach(function (button) {
+                const active = button.dataset.target === language;
+                button.classList.toggle("active", active);
+                button.setAttribute("aria-pressed", active ? "true" : "false");
+            });
+            articles.forEach(function (article) {
+                article.classList.toggle("active", article.dataset.language === language);
+            });
+        }
+
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                setLanguage(button.dataset.target);
+            });
+        });
+
+        const preferredLanguage = navigator.language && navigator.language.toLowerCase().startsWith("zh")
+            ? "zh"
+            : "en";
+        setLanguage(preferredLanguage);
+    }());
+</script>
+</body>
+</html>
