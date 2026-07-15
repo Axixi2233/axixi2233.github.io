@@ -141,6 +141,22 @@
     ]
   },
   {
+    "title": "投屏·阿西西",
+    "href": "https://testflight.apple.com/join/MGRZwK1f",
+    "description": "将 iPhone 或 iPad 变成投屏接收屏，支持接收画面与声音、全屏查看、截图、带声音录屏，并可连接和遥控兼容的 Apple TV。",
+    "icon": "./res/icon/ic_tvscreen.png",
+    "iconAlt": "投屏·阿西西图标",
+    "tags": ["iOS", "AirPlay", "投屏接收", "Apple TV 遥控"],
+    "linkRows": [
+      [
+        {
+          "label": "TestFlight",
+          "href": "https://testflight.apple.com/join/MGRZwK1f"
+        }
+      ]
+    ]
+  },
+  {
     "title": "千秋·阿西西",
     "href": "https://github.com/Axixi2233/chiaki-android/releases",
     "description": "基于开源项目 Chiaki Android 分支二次开发的经典版 PlayStation 串流客户端，为 Android 设备提供稳定、直接的远程游玩体验。",
