@@ -2,9 +2,9 @@
   "appID": "cn.axi.remotelight",
   "data": {
     "latest": {
-      "code": 7,
-      "versionName": "1.0.6",
-      "desc": "遥光相连，触感随行。\n本次更新，我们带来了Razer Kishi 手柄原生触觉反馈支持;使用指南\n- 兼容雷蛇骑仕V3系列及Ultra系列手柄；\n- 连接手柄 进入串流界面 打开游戏菜单 选择USB手柄驱动；\n- 长按手柄Nexus+A键 切换到HID模式下使用，HID模式下支持扩展按键设置为C和Z键；\n- XINPUT模式为Xbox协议震动效果，HID模式为kishi原生音频触觉模式；\n- 完整性能信息 显示当前手柄在原生游戏震动与音频震动中的反馈状态；",
+      "code": 8,
+      "versionName": "1.0.7",
+      "desc": "- 修复设备体感旋转问题\n- 新增雷蛇 Kishi V2 Pro 原生触觉支持，可体验 PS5 PCM 触觉与普通震动反馈。\n- 新增远程游玩连接说明，帮助了解 PSN 远程、直连模式及网络配置。\n- 新增主机注册帮助，补充 Account ID、Base64、配对码等操作指引。\n- 新增设置帮助中心，涵盖 Kishi 原生触觉、视频渲染、震动反馈、USB 手柄、虚拟控制及日志备份。",
       "quark": "https://pan.quark.cn/s/29e3e7624969",
       "baidu": "https://pan.baidu.com/s/1HV8r77HwypzCgSKT0hsC1g?pwd=axix"
     },
