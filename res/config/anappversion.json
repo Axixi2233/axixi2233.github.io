@@ -2,9 +2,9 @@
   "appID": "cn.axi.moonlight.an",
   "data": {
     "latest": {
-      "code": 11,
-      "versionName": "12.1-260715",
-      "desc": "-UI重构中，此版本为Kishi音频测试版(暂无github版)；\n-本地更新\n-修复主机页长按丢失的选项\n-上次更新\n1、USB手柄驱动新增雷蛇骑仕ultra&v3系列HID模式；\n2、音频震动支持kishi手柄原生音频触觉反馈 Nexus+A HID模式生效；\n3、kishi hid模式支持使用Nexus App映射C和Z键，Z键可以设置打开游戏菜单（杂项）；\n4、完整性能信息可查看当前音频震动的模式及USB手柄的协议；（长按游戏菜单性能信息icon可以切换完整及精简信息显示）；\nPS:音频震动入口：游戏菜单-杂项-音频震动开启-手柄，语音过滤：低或者关闭",
+      "code": 12,
+      "versionName": "12.1-260722",
+      "desc": "-UI重构中，此版本为测试版(暂无github版)；\n1、适配雷蛇V2 Pro手柄原生触觉；\n2、新增虚拟鼠标控件，游戏菜单 顶部选项开启；\n3、优化画面缩放功能  游戏菜单 顶部选项开启；",
       "github": "https://github.com/Axixi2233/moonlight-android/releases",
       "quark": "https://pan.quark.cn/s/9a334d831290",
       "baidu": "https://pan.baidu.com/s/1yWEiP4ew0RbBMj0jjCWg8g?pwd=axix"
@@ -39,6 +39,11 @@
         "code": 7,
         "versionName": "12.1-260502",
         "desc": "-本次更新\n1、优化FSR超分功能；\n2、优化完整性能信息样式；\nPS:麦克风功能 需要搭配sunshine·阿西西"
+      },
+      {
+        "code": 11,
+        "versionName": "12.1-260715",
+        "desc": "-UI重构中，此版本为Kishi音频测试版(暂无github版)；\n-本地更新\n-修复主机页长按丢失的选项\n-上次更新\n1、USB手柄驱动新增雷蛇骑仕ultra&v3系列HID模式；\n2、音频震动支持kishi手柄原生音频触觉反馈 Nexus+A HID模式生效；\n3、kishi hid模式支持使用Nexus App映射C和Z键，Z键可以设置打开游戏菜单（杂项）；\n4、完整性能信息可查看当前音频震动的模式及USB手柄的协议；（长按游戏菜单性能信息icon可以切换完整及精简信息显示）；\nPS:音频震动入口：游戏菜单-杂项-音频震动开启-手柄，语音过滤：低或者关闭"
       }
     ]
   }
