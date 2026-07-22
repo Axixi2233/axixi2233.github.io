@@ -1,94 +1,906 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>星光·阿西西 隐私声明</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="星光·阿西西（StarLight · Axixi）iOS、iPadOS 与 tvOS 隐私政策 / Privacy Policy" />
+  <title>星光·阿西西 隐私政策 | StarLight · Axixi Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f5f7fb;
+      --surface: rgba(255, 255, 255, 0.88);
+      --surface-solid: #ffffff;
+      --text: #172033;
+      --muted: #667085;
+      --line: rgba(23, 32, 51, 0.12);
+      --accent: #3b6cff;
+      --accent-soft: rgba(59, 108, 255, 0.10);
+      --accent-border: rgba(59, 108, 255, 0.25);
+      --shadow: 0 18px 60px rgba(31, 42, 68, 0.10);
+      --radius: 22px;
+    }
 
-        h1 {
-            margin-bottom: 10px;
-        }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f18;
+        --surface: rgba(20, 26, 40, 0.88);
+        --surface-solid: #141a28;
+        --text: #f3f5f9;
+        --muted: #aab3c5;
+        --line: rgba(255, 255, 255, 0.12);
+        --accent: #7ea2ff;
+        --accent-soft: rgba(126, 162, 255, 0.13);
+        --accent-border: rgba(126, 162, 255, 0.30);
+        --shadow: 0 18px 60px rgba(0, 0, 0, 0.32);
+      }
+    }
 
-        .update-date {
-            margin-bottom: 30px;
-            color: #666;
-        }
+    * {
+      box-sizing: border-box;
+    }
 
-        .content {
-            text-align: left;
-            margin-top: 30px;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        h2 {
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 15% 0%, var(--accent-soft), transparent 34rem),
+        var(--bg);
+      color: var(--text);
+      font-family:
+        -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+        "PingFang SC", "Hiragino Sans GB", "Segoe UI", Arial, sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
 
-        p, li {
-            margin-bottom: 15px;
-        }
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
 
-        ul {
-            margin-left: 20px;
-        }
+    button {
+      font: inherit;
+    }
 
-        .contact-info {
-            margin-top: 30px;
-            padding: 15px;
-            border: 1px solid #ddd;
-        }
+    .page {
+      width: min(940px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
 
-        footer {
-            margin-top: 40px;
-            color: #666;
-        }
-    </style>
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .language-switcher {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .language-switcher button {
+      min-width: 84px;
+      padding: 8px 14px;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+
+    .language-switcher button:hover {
+      color: var(--text);
+    }
+
+    .language-switcher button:focus-visible {
+      outline: 3px solid var(--accent-border);
+      outline-offset: 2px;
+    }
+
+    .language-switcher button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(59, 108, 255, 0.24);
+    }
+
+    .policy {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+
+    .hero {
+      padding: 48px 48px 34px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, var(--accent-soft), transparent 55%);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding: 5px 10px;
+      border: 1px solid var(--accent-border);
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.14;
+      letter-spacing: -0.035em;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .date-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .body {
+      padding: 10px 48px 48px;
+    }
+
+    section {
+      padding-top: 30px;
+      scroll-margin-top: 20px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 23px;
+      line-height: 1.35;
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      font-size: 18px;
+      line-height: 1.45;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 10px 0 16px;
+      padding-left: 1.25rem;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    .lead {
+      font-size: 17px;
+    }
+
+    .platform-grid,
+    .permission-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0 8px;
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: color-mix(in srgb, var(--surface-solid) 76%, transparent);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .badge {
+      display: inline-flex;
+      margin-bottom: 10px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .data-table {
+      width: 100%;
+      margin: 18px 0 10px;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: color-mix(in srgb, var(--surface-solid) 76%, transparent);
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 15px 16px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .data-table th {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      background: var(--accent-soft);
+    }
+
+    .data-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .data-table th:nth-child(1),
+    .data-table td:nth-child(1) {
+      width: 22%;
+    }
+
+    .data-table th:nth-child(2),
+    .data-table td:nth-child(2) {
+      width: 31%;
+    }
+
+    .note {
+      margin: 18px 0 0;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      background: var(--accent-soft);
+    }
+
+    .contact {
+      margin-top: 18px;
+      padding: 20px;
+      border: 1px solid var(--accent-border);
+      border-radius: 16px;
+      background: var(--accent-soft);
+    }
+
+    .contact p:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer {
+      padding: 22px 48px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(100% - 20px, 940px);
+        padding-top: 14px;
+      }
+
+      .topbar {
+        margin-bottom: 10px;
+      }
+
+      .hero {
+        padding: 34px 24px 26px;
+      }
+
+      .body {
+        padding: 4px 24px 34px;
+      }
+
+      .footer {
+        padding: 20px 24px;
+      }
+
+      .platform-grid,
+      .permission-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .data-table,
+      .data-table tbody,
+      .data-table tr,
+      .data-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .data-table thead {
+        display: none;
+      }
+
+      .data-table tr {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .data-table tr:last-child {
+        border-bottom: 0;
+      }
+
+      .data-table td {
+        padding: 7px 15px;
+        border-bottom: 0;
+      }
+
+      .data-table td::before {
+        display: block;
+        margin-bottom: 2px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+        content: attr(data-label);
+      }
+    }
+
+    @media print {
+      :root {
+        --bg: #fff;
+        --surface: #fff;
+        --surface-solid: #fff;
+        --text: #000;
+        --muted: #444;
+        --line: #ddd;
+        --accent: #000;
+        --accent-soft: #f4f4f4;
+        --accent-border: #ccc;
+        --shadow: none;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: 100%;
+        padding: 0;
+      }
+
+      .topbar {
+        display: none;
+      }
+
+      .policy {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .hero,
+      .body,
+      .footer {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-<h3>星光·阿西西隐私声明</h3>
-<div class="update-date">更新日期：2026年04月20日</div>
-<div class="content">
-<!--    <p><strong>手柄·阿西西</strong> 是由 XX（以下简称"我们"）为您提供的，用于手柄·阿西西的应用。本隐私声明由我们为处理您的个人信息而制定。</p>-->
-    <p>我们非常重视您的个人信息和隐私保护，将会按照法律要求和业界成熟的安全标准，为您的个人信息提供相应的安全保护措施。</p>
-
-    <h4>1. 我们如何收集和使用您的个人信息</h4>
-    <p>我们仅在有合法性基础的情形下才会使用您的个人信息。根据适用的法律，我们可能会基于您的同意、为履行/订立您与我们的合同所必需、履行法定义务所必需等合法性基础，使用您的个人信息。</p>
-    <p>1.1 基于履行法定义务或其他法律法规规定的情形，我们可能会处理您的以下个人信息：</p>
-    <p>在您使用相关业务的过程中，我们会处理所必需的信息，以便履行我们的合同义务。若您不提供相关信息，会影响到您使用本应用的相关功能/服务。</p>
-    <p>为了实现应用功能，在获取您的同意后我们需要收集：</p>
-    <ul>
-        <li>WIFI状态</li>
-        <li>IP地址</li>
-        <li>屏幕方向传感器</li>
-        <li>操作系统信息</li>
-        <li>陀螺仪数据</li>
-        <li>加速器数据</li>
-        <li>其他软硬件参数/系统设置</li>
-    </ul>
-    <h4>2. 设备权限调用</h4>
-    <p>麦克风（使用麦克风）:用于串流时，将麦克风语音信息传递到你自己的电脑上，用于语音输入</p>
-    <h4>3. 管理您的个人信息</h4>
-    <p>如您对您的数据主体权利有进一步要求或存在任何疑问、意见或建议，可通过本声明中"如何联系我们"章节中所述方式与我们取得联系，并行使您的相关权利。</p>
-    <h4>4. 信息存储地点及期限</h4>
-    <p>4.1 固定存储期限：数据保存在设备本地存储中，应用卸载后数据将清空。</p>
-    <p>4.2 上述信息将会传输并保存至用户自己搭建的Sunshine串流服务器。</p>
-    <h4>5. 如何联系我们</h4>
-    <p>您可通过以下方式联系我们，并行使您的相关权利，我们会尽快回复。</p>
-    <p><strong>邮箱：genng2019@gmail.com</strong></p>
-    <p>如果您对我们的回复不满意, 特别是当个人信息处理行为损害了您的合法权益时，您还可以通过向有管辖权的人民法院提起诉讼、向行业自律协会或政府相关管理机构投诉等外部途径进行解决。您也可以向我们了解可能适用的相关投诉途径的信息。</p>
-    <div class="effective-date">
-        <p>生效日期：2026年03月25日</p>
+  <main class="page">
+    <div class="topbar">
+      <div class="language-switcher" role="group" aria-label="Language">
+        <button id="btn-zh" type="button" aria-pressed="true" onclick="setLanguage('zh')">中文</button>
+        <button id="btn-en" type="button" aria-pressed="false" onclick="setLanguage('en')">English</button>
+      </div>
     </div>
-</div>
 
+    <article id="policy-zh" class="policy" lang="zh-CN">
+      <header class="hero">
+        <div class="eyebrow">iOS · iPadOS · tvOS</div>
+        <h1>星光·阿西西隐私政策</h1>
+        <p class="subtitle">本政策说明应用在不同 Apple 平台上如何处理信息及调用设备能力。</p>
+        <div class="date-row">
+          <span>更新日期：2026 年 7 月 22 日</span>
+          <span>生效日期：2026 年 3 月 25 日</span>
+        </div>
+      </header>
+
+      <div class="body">
+        <section>
+          <p class="lead">
+            我们重视您的个人信息和隐私保护，并会按照适用法律法规及合理的安全标准处理相关信息。
+            本政策适用于“星光·阿西西”在 iOS、iPadOS 和 tvOS 平台上的版本。
+          </p>
+          <div class="note">
+            不同平台提供的功能不同。tvOS 版本不使用麦克风、屏幕方向传感器、陀螺仪或加速度计；
+            这些能力仅可能由 iOS/iPadOS 版本在您启用相应功能时使用。
+          </div>
+        </section>
+
+        <section>
+          <h2>1. 适用平台与功能差异</h2>
+          <div class="platform-grid">
+            <div class="card">
+              <span class="badge">iOS / iPadOS</span>
+              <h3>移动设备版本</h3>
+              <p>
+                支持连接您自己的电脑并进行串流。根据您主动启用的功能，可能使用麦克风、
+                屏幕方向、陀螺仪和加速度计数据，以实现语音输入、画面方向适配或体感控制。
+              </p>
+            </div>
+            <div class="card">
+              <span class="badge">tvOS</span>
+              <h3>Apple TV 版本</h3>
+              <p>
+                支持通过网络连接您自己的电脑并在电视端使用串流功能。tvOS 版本不使用麦克风、
+                屏幕方向传感器、陀螺仪或加速度计数据。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>2. 我们如何处理您的信息</h2>
+          <p>
+            我们仅在具有合法处理基础且为实现应用功能所必需的情况下处理信息，例如取得您的同意、
+            履行与您之间的服务关系、遵守适用法律法规，或保障应用和连接安全。
+          </p>
+          <p>
+            如果您拒绝提供某项功能所必需的信息或权限，对应功能可能无法使用，但不影响其他不依赖该信息或权限的功能。
+          </p>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>适用平台</th>
+                <th>处理的信息</th>
+                <th>用途</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="适用平台">iOS / iPadOS / tvOS</td>
+                <td data-label="处理的信息">
+                  Wi-Fi 或本地网络连接状态、IP 地址、您填写或发现的 Sunshine 主机地址及连接信息
+                </td>
+                <td data-label="用途">
+                  发现并连接您自己的电脑、建立串流连接、维持网络通信及排查连接问题
+                </td>
+              </tr>
+              <tr>
+                <td data-label="适用平台">iOS / iPadOS / tvOS</td>
+                <td data-label="处理的信息">
+                  操作系统信息，以及实现兼容性所需的基础软硬件参数和系统设置
+                </td>
+                <td data-label="用途">
+                  适配设备能力、选择合适的串流与渲染设置、提升功能稳定性
+                </td>
+              </tr>
+              <tr>
+                <td data-label="适用平台">仅 iOS / iPadOS</td>
+                <td data-label="处理的信息">
+                  屏幕方向、陀螺仪和加速度计数据
+                </td>
+                <td data-label="用途">
+                  在您使用相关功能时进行画面方向适配或体感控制；相关数据可能作为控制输入传输至您的 Sunshine 主机
+                </td>
+              </tr>
+              <tr>
+                <td data-label="适用平台">仅 iOS / iPadOS</td>
+                <td data-label="处理的信息">
+                  麦克风采集的语音音频
+                </td>
+                <td data-label="用途">
+                  在您主动启用麦克风功能时，将语音传输至您自己的电脑，用于远程语音输入
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>3. 设备权限调用</h2>
+          <div class="permission-grid">
+            <div class="card">
+              <span class="badge">全部平台</span>
+              <h3>本地网络</h3>
+              <p>
+                用于发现和连接同一网络内或由您指定的 Sunshine 主机。系统要求授权时，
+                应用会在调用前显示相应的权限提示。
+              </p>
+            </div>
+            <div class="card">
+              <span class="badge">仅 iOS / iPadOS</span>
+              <h3>麦克风</h3>
+              <p>
+                仅在您主动使用语音输入功能时调用。麦克风音频将发送至您自己的电脑。
+                tvOS 版本不请求或使用麦克风权限。
+              </p>
+            </div>
+            <div class="card">
+              <span class="badge">仅 iOS / iPadOS</span>
+              <h3>方向与运动传感器</h3>
+              <p>
+                仅在画面方向适配或体感控制等相关功能中使用。tvOS 版本不处理屏幕方向、
+                陀螺仪或加速度计数据。
+              </p>
+            </div>
+          </div>
+          <p>
+            您可以在设备的系统设置中管理已授予的权限，也可以停止使用对应功能。
+            撤回权限后，依赖该权限的功能可能无法继续使用。
+          </p>
+        </section>
+
+        <section>
+          <h2>4. 信息传输、存储与保留</h2>
+          <h3>4.1 设备本地存储</h3>
+          <p>
+            应用可能在您的设备本地保存 Sunshine 主机连接配置、应用偏好设置及实现功能所需的数据。
+            当您在应用内清除相关配置或卸载应用后，设备本地保存的数据将被删除。
+          </p>
+
+          <h3>4.2 您自己的 Sunshine 主机</h3>
+          <p>
+            为实现串流、控制和语音输入等功能，相关网络连接信息、控制输入、音频或其他串流数据，
+            可能按照您的操作传输至由您自行搭建和管理的 Sunshine 主机。
+          </p>
+          <p>
+            Sunshine 主机上的数据是否被记录、保存及保留多久，取决于您自己的服务器配置和管理方式。
+            您应在自己的电脑或服务器上管理、清除相关数据。
+          </p>
+        </section>
+
+        <section>
+          <h2>5. 信息安全</h2>
+          <p>
+            我们会采取与应用功能和信息风险相适应的合理技术及管理措施，防止相关信息遭到未经授权的访问、
+            使用、披露、修改或丢失。互联网传输无法保证绝对安全，请您妥善保护自己的网络环境、
+            Sunshine 主机、访问凭据和设备。
+          </p>
+        </section>
+
+        <section>
+          <h2>6. 管理您的信息与权限</h2>
+          <p>您可以通过以下方式管理与本应用有关的信息：</p>
+          <ul>
+            <li>在应用内修改或删除 Sunshine 主机及相关连接配置；</li>
+            <li>在设备系统设置中关闭本地网络或麦克风等权限；</li>
+            <li>停止使用体感、语音输入等可选功能；</li>
+            <li>卸载应用，以删除应用保存在设备本地的数据；</li>
+            <li>在您自己的 Sunshine 主机上检查、清除或管理相关记录。</li>
+          </ul>
+          <p>
+            如您希望行使适用法律赋予的数据主体权利，或对信息处理方式存在疑问，可以通过本政策中的联系方式与我们联系。
+          </p>
+        </section>
+
+        <section>
+          <h2>7. 本政策的更新</h2>
+          <p>
+            当应用功能、平台能力或信息处理方式发生变化时，我们可能更新本政策。
+            更新后的政策会通过本页面发布，并标明新的更新日期；如适用法律要求，我们还会以其他适当方式通知您。
+          </p>
+        </section>
+
+        <section>
+          <h2>8. 如何联系我们</h2>
+          <p>
+            如您对本政策、权限使用或个人信息处理有任何疑问、意见、建议或请求，可通过以下方式联系我们。
+            我们会在合理期限内回复。
+          </p>
+          <div class="contact">
+            <p><strong>电子邮箱</strong></p>
+            <p><a href="mailto:genng2019@gmail.com">genng2019@gmail.com</a></p>
+          </div>
+          <p>
+            如果您对我们的回复不满意，特别是您认为相关信息处理行为损害了您的合法权益，
+            您可以依据适用法律向有管辖权的法院、行业自律组织或有关监管机构寻求救济。
+          </p>
+        </section>
+      </div>
+
+      <footer class="footer">
+        星光·阿西西 · iOS / iPadOS / tvOS
+      </footer>
+    </article>
+
+    <article id="policy-en" class="policy" lang="en" hidden>
+      <header class="hero">
+        <div class="eyebrow">iOS · iPadOS · tvOS</div>
+        <h1>StarLight Privacy Policy</h1>
+        <p class="subtitle">
+          This Policy explains how the app handles information and accesses device capabilities across Apple platforms.
+        </p>
+        <div class="date-row">
+          <span>Last Updated: July 22, 2026</span>
+          <span>Effective Date: March 25, 2026</span>
+        </div>
+      </header>
+
+      <div class="body">
+        <section>
+          <p class="lead">
+            We value the protection of your personal information and privacy. We process relevant information
+            in accordance with applicable laws and reasonable security standards. This Policy applies to
+            StarLight · Axixi on iOS, iPadOS, and tvOS.
+          </p>
+          <div class="note">
+            Features differ by platform. The tvOS version does not use the microphone, screen-orientation sensors,
+            gyroscope, or accelerometer. These capabilities may only be used by the iOS/iPadOS version when you
+            enable the relevant features.
+          </div>
+        </section>
+
+        <section>
+          <h2>1. Platforms and Feature Differences</h2>
+          <div class="platform-grid">
+            <div class="card">
+              <span class="badge">iOS / iPadOS</span>
+              <h3>Mobile Version</h3>
+              <p>
+                The app connects to your own computer for streaming. Depending on the features you choose to enable,
+                it may use the microphone, screen orientation, gyroscope, and accelerometer data for voice input,
+                display-orientation handling, or motion controls.
+              </p>
+            </div>
+            <div class="card">
+              <span class="badge">tvOS</span>
+              <h3>Apple TV Version</h3>
+              <p>
+                The app connects to your own computer over a network and provides streaming features on Apple TV.
+                The tvOS version does not use microphone audio, screen-orientation sensors, gyroscope data,
+                or accelerometer data.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>2. How We Process Your Information</h2>
+          <p>
+            We process information only where there is a lawful basis and where the processing is necessary
+            to provide app functionality, such as with your consent, to provide the requested service,
+            to comply with applicable law, or to protect the security of the app and its connections.
+          </p>
+          <p>
+            If you decline information or permission required for a specific feature, that feature may be unavailable.
+            Other features that do not depend on that information or permission will remain unaffected.
+          </p>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Platforms</th>
+                <th>Information Processed</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Platforms">iOS / iPadOS / tvOS</td>
+                <td data-label="Information Processed">
+                  Wi-Fi or local-network connection status, IP addresses, and Sunshine host addresses or connection
+                  information that you enter or that the app discovers
+                </td>
+                <td data-label="Purpose">
+                  To discover and connect to your own computer, establish and maintain streaming connections,
+                  and troubleshoot connectivity
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Platforms">iOS / iPadOS / tvOS</td>
+                <td data-label="Information Processed">
+                  Operating-system information and basic software, hardware, or system-setting information
+                  required for compatibility
+                </td>
+                <td data-label="Purpose">
+                  To adapt to device capabilities, select appropriate streaming or rendering settings,
+                  and improve functional stability
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Platforms">iOS / iPadOS only</td>
+                <td data-label="Information Processed">
+                  Screen-orientation, gyroscope, and accelerometer data
+                </td>
+                <td data-label="Purpose">
+                  To support display-orientation handling or motion controls when you use those features.
+                  This data may be transmitted to your Sunshine host as control input
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Platforms">iOS / iPadOS only</td>
+                <td data-label="Information Processed">
+                  Voice audio captured through the microphone
+                </td>
+                <td data-label="Purpose">
+                  When you actively enable the microphone feature, to transmit voice audio to your own computer
+                  for remote voice input
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>3. Device Permissions and Capabilities</h2>
+          <div class="permission-grid">
+            <div class="card">
+              <span class="badge">All Platforms</span>
+              <h3>Local Network</h3>
+              <p>
+                Used to discover and connect to a Sunshine host on the same network or at an address you specify.
+                Where system authorization is required, the app displays the relevant permission prompt before access.
+              </p>
+            </div>
+            <div class="card">
+              <span class="badge">iOS / iPadOS only</span>
+              <h3>Microphone</h3>
+              <p>
+                Accessed only when you actively use the voice-input feature. Microphone audio is sent to your own
+                computer. The tvOS version does not request or use microphone permission.
+              </p>
+            </div>
+            <div class="card">
+              <span class="badge">iOS / iPadOS only</span>
+              <h3>Orientation and Motion Sensors</h3>
+              <p>
+                Used only for features such as display-orientation handling or motion controls. The tvOS version
+                does not process screen-orientation, gyroscope, or accelerometer data.
+              </p>
+            </div>
+          </div>
+          <p>
+            You can manage granted permissions in your device settings or stop using the corresponding feature.
+            After permission is withdrawn, features that depend on that permission may no longer work.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Transmission, Storage, and Retention</h2>
+          <h3>4.1 Local Storage on Your Device</h3>
+          <p>
+            The app may store Sunshine host connection settings, app preferences, and other information required
+            for functionality locally on your device. Locally stored information is deleted when you remove the
+            relevant configuration in the app or uninstall the app.
+          </p>
+
+          <h3>4.2 Your Own Sunshine Host</h3>
+          <p>
+            To provide streaming, controls, and voice input, relevant connection information, control input,
+            audio, or other streaming data may be transmitted, at your direction, to the Sunshine host that you
+            deploy and manage.
+          </p>
+          <p>
+            Whether information is logged or stored on the Sunshine host, and how long it is retained, depends on
+            your own server configuration and administration. You should manage or delete such information on your
+            own computer or server.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Information Security</h2>
+          <p>
+            We take reasonable technical and organizational measures appropriate to the app’s functionality and
+            the risks involved to help prevent unauthorized access, use, disclosure, alteration, or loss.
+            No internet transmission can be guaranteed to be completely secure. You are responsible for protecting
+            your network environment, Sunshine host, access credentials, and devices.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Managing Your Information and Permissions</h2>
+          <p>You can manage information related to the app by:</p>
+          <ul>
+            <li>editing or deleting Sunshine host and connection settings within the app;</li>
+            <li>disabling local-network or microphone permission in your device settings;</li>
+            <li>stopping the use of optional features such as motion controls or voice input;</li>
+            <li>uninstalling the app to delete information stored locally by the app; and</li>
+            <li>reviewing, deleting, or managing records on your own Sunshine host.</li>
+          </ul>
+          <p>
+            To exercise any data-subject rights available under applicable law, or to ask questions about our
+            handling of information, contact us using the details in this Policy.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Changes to This Policy</h2>
+          <p>
+            We may update this Policy when app features, platform capabilities, or information-handling practices
+            change. The updated Policy will be published on this page with a revised “Last Updated” date.
+            Where required by applicable law, we will provide additional notice in an appropriate manner.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. How to Contact Us</h2>
+          <p>
+            For questions, comments, suggestions, or requests concerning this Policy, device permissions,
+            or the processing of personal information, contact us using the details below.
+            We will respond within a reasonable period.
+          </p>
+          <div class="contact">
+            <p><strong>Email</strong></p>
+            <p><a href="mailto:genng2019@gmail.com">genng2019@gmail.com</a></p>
+          </div>
+          <p>
+            If you are dissatisfied with our response, particularly if you believe the processing of your information
+            has infringed your lawful rights or interests, you may seek remedies from a court with jurisdiction,
+            an applicable industry self-regulatory body, or a competent regulatory authority, as permitted by law.
+          </p>
+        </section>
+      </div>
+
+      <footer class="footer">
+        StarLight · Axixi · iOS / iPadOS / tvOS
+      </footer>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      const stored = localStorage.getItem("privacy-policy-language");
+      const preferred = stored || ((navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en");
+      setLanguage(preferred);
+    })();
+
+    function setLanguage(language) {
+      const isChinese = language === "zh";
+      const zhPolicy = document.getElementById("policy-zh");
+      const enPolicy = document.getElementById("policy-en");
+      const zhButton = document.getElementById("btn-zh");
+      const enButton = document.getElementById("btn-en");
+
+      zhPolicy.hidden = !isChinese;
+      enPolicy.hidden = isChinese;
+      zhButton.setAttribute("aria-pressed", String(isChinese));
+      enButton.setAttribute("aria-pressed", String(!isChinese));
+
+      document.documentElement.lang = isChinese ? "zh-CN" : "en";
+      document.title = isChinese
+        ? "星光·阿西西 隐私政策"
+        : "StarLight · Axixi Privacy Policy";
+
+      try {
+        localStorage.setItem("privacy-policy-language", language);
+      } catch (_) {
+        // Storage may be unavailable in private browsing or local-file contexts.
+      }
+    }
+  </script>
 </body>
 </html>
