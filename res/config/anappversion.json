@@ -2,9 +2,9 @@
   "appID": "cn.axi.moonlight.an",
   "data": {
     "latest": {
-      "code": 12,
-      "versionName": "12.1-260722",
-      "desc": "-UI重构中，此版本为测试版(暂无github版)；\n1、适配雷蛇V2 Pro手柄原生触觉；\n2、新增虚拟鼠标控件，游戏菜单 顶部选项开启；\n3、优化画面缩放功能  游戏菜单 顶部选项开启；",
+      "code": 13,
+      "versionName": "12.1-260723",
+      "desc": "- 移除相关peasyo项目实现，重新按照Nexus SDK实现kishi手柄触觉反馈。",
       "github": "https://github.com/Axixi2233/moonlight-android/releases",
       "quark": "https://pan.quark.cn/s/9a334d831290",
       "baidu": "https://pan.baidu.com/s/1yWEiP4ew0RbBMj0jjCWg8g?pwd=axix"

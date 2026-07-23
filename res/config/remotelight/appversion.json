@@ -2,9 +2,9 @@
   "appID": "cn.axi.remotelight",
   "data": {
     "latest": {
-      "code": 8,
-      "versionName": "1.0.7",
-      "desc": "- 修复设备体感旋转问题\n- 新增雷蛇 Kishi V2 Pro 原生触觉支持，可体验 PS5 PCM 触觉与普通震动反馈。\n- 新增远程游玩连接说明，帮助了解 PSN 远程、直连模式及网络配置。\n- 新增主机注册帮助，补充 Account ID、Base64、配对码等操作指引。\n- 新增设置帮助中心，涵盖 Kishi 原生触觉、视频渲染、震动反馈、USB 手柄、虚拟控制及日志备份。",
+      "code": 9,
+      "versionName": "1.0.8",
+      "desc": "- 移除相关peasyo项目实现，重新按照Nexus SDK实现kishi手柄触觉反馈。",
       "quark": "https://pan.quark.cn/s/29e3e7624969",
       "baidu": "https://pan.baidu.com/s/1HV8r77HwypzCgSKT0hsC1g?pwd=axix"
     },
